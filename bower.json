@@ -1,0 +1,21 @@
+{
+  "name": "create-web-site",
+  "authors": [
+    "Maxime Trudel <max@pingouincreation.com>"
+  ],
+  "description": "All base files used for creating a new site from start to finish. Including Saas, jade, js, browsersync, bourbon, font-awesome controlled by a gulp file. All ready configured",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "*",
+    "font-awesome": "*"
+  }
+}

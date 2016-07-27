@@ -1,0 +1,40 @@
+{
+  "name": "Create-web-site",
+  "version": "0.1.0",
+  "description": "All base files used for creating a new site from start to finish. Including Saas, jade, js, browsersync, bourbon, font-awesome controlled by a gulp file. All ready configured",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "*",
+    "browser-sync": "*",
+    "check-pages": "*",
+    "critical": "git://github.com/addyosmani/critical.git#vinyl",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-csso": "*",
+    "gulp-if": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "*",
+    "gulp-jshint": "*",
+    "gulp-load-plugins": "*",
+    "gulp-minify-html-2": "*",
+    "gulp-plumber": "*",
+    "gulp-print": "*",
+    "gulp-retinize": "*",
+    "gulp-sass": "*",
+    "gulp-sitemap": "*",
+    "gulp-uglify": "*",
+    "gulp-useref": "*",
+    "imagemin-pngquant": "*",
+    "jshint": "*",
+    "jshint-stylish": "*",
+    "useref": "*",
+    "yargs": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

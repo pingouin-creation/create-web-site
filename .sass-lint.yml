@@ -60,8 +60,11 @@ rules:
   bem-depth: 0
   border-zero: 1
   brace-style: 1
-  clean-import-paths: 1
   empty-args: 1
+  clean-import-paths:
+    - 1
+    - filename-extension: false
+      leading-underscore: true
   hex-length: 1
   hex-notation: 1
   indentation: 1
@@ -87,4 +90,4 @@ rules:
 
   # Final Items
   trailing-semicolon: 1
-  final-newline: 1
+  final-newline: 0

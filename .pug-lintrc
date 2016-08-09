@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "emarsys"
+  ],
+  "someSetting": true,
+  "someOtherSetting": true
+}

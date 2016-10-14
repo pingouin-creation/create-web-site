@@ -4,21 +4,22 @@ All base files used for creating a new site from start to finish. Including Saas
 ## What it does
 Use these files when you want to create a web site. At the end you get all neccessary file to publish a build folder. You should create your web site using Pug(Jade), Sass(scss). It's a lot quicker to use these technologies. Check a look on their web site.
 
-###YOU MUST BE COmFORTABLE USING GULP
+###YOU MUST BE COMFORTABLE USING GULP
 
 Gulp does a lot of tasks by default:
     1. It compiles scss files to css
     2. It compiles pug files to html
     3. It checks errors and formatting
     4. It creates 1x, 2x and 3x images.
-    5. It compresses images
-    6. It concatenates and minifies css files
-    7. It concatenates and uglifies js files (watch out for angular)
-    8. It injects css and js files into html files
-    9. It passes throught html to set critical css
-   10. It minifies html files 
-   11. It creates sitemaps.xml (for google)
-   12. It uploads "build files" on your ftp server
+    5. It compresses svg
+    6. It compresses images
+    7. It concatenates and minifies css files
+    8. It concatenates and uglifies js files (watch out for angular)
+    9. It injects css and js files into html files
+    10. It passes throught html to set critical css
+    11. It minifies html files 
+    12. It creates sitemaps.xml (for google)
+    13. It uploads "build files" on your ftp server
    
 You have 3 other functions to 
 - clean build folder (gulp cleanbuild)
@@ -45,8 +46,11 @@ Reloads browsersync if needed
 ``` gulp vet```
 Passes jshint on your javascript files
 
-``` gulp Pug```
+``` gulp pug```
 Compiles Pug files in the src folder
+
+```gulp svg```
+Compresses svg image
 
 ``` gulp retina```
 Transforms any _2x.png, _2x.jpg or _2x.jpeg already into the images folder to 1x images keeping the 2x version into the same folder.

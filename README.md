@@ -7,7 +7,7 @@ Use these file when you wan to create a web site. At the end you get all neccess
 YOU MOST BE CONFORTABLE USING GULP
 
 Gulp does a lot a tasks by default:
-	1. It compiles scss files to css
+    1. It compiles scss files to css
     2. It compiles jade files to html
     3. It checks errors and formating if javascript
     4. It creates 1x images
@@ -18,6 +18,7 @@ Gulp does a lot a tasks by default:
     9. It passes throught html to set critical css
    10. It minify html files 
    11. It creates sitemaps.xml (for google)
+   12. It uploads "build files" on your ftp server
    
 You have 3 other functions to 
 - clean build folder (gulp cleanbuild)
@@ -53,7 +54,6 @@ Transforms any _2x.png, _2x.jpg or _2x.jpeg already into the images folder to 1x
 ``` gulp image-optim```
 Optimises images for a lower file size.
 
-
 ``` gulp compile```
 Will run all previous task and it will uglyfy js, minify css, concatenate css and js qand will inject them into the htmls. It will save the htmls in a build folder. 
 
@@ -64,13 +64,16 @@ Will put above the fold css inline into html (faster load page)
 will minify html file
 
 ``` gulp sitemap```
-Create a sitemap.xml in the build folder
+Creates a sitemap.xml in the build folder
+
+```gulp clean-build```
+deletes all files in build folder
 
 ``` gulp build```
-Create all the previous task and run browser sync on the build folder
+Does all the previous task and run browser sync on the build folder
 
 ``` gulp testBuild```
-Change your site and will check the link online.
+Changes your site and will check the link online.
 
 ``` gulp watch```
 Will run browser sync on src file and watych css, jad and js file.
@@ -78,7 +81,8 @@ Will run browser sync on src file and watych css, jad and js file.
 ``` gulp browser-sync```
 Runs browser sync on your src folder
 
-``` gulp clean-build```
-Deletes all files into the build folder.
+``` gulp upload```
+Runs build folder and uploads ftp ( you need to edit the credentials)
+
 
 

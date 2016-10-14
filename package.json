@@ -22,13 +22,16 @@
     "gulp-print": "*",
     "gulp-pug": "^3.0.4",
     "gulp-retinize": "*",
+    "gulp-resppnsive":"*",
     "gulp-sass": "*",
     "gulp-sitemap": "*",
     "gulp-uglify": "*",
+    "gulp-util":"*",
     "gulp-useref": "*",
     "imagemin-pngquant": "*",
     "useref": "*",
-    "pug-lint-config-emarsys":"*"
+    "pug-lint-config-emarsys":"*",
+    "vinyl-ftp":"*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

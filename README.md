@@ -1,22 +1,22 @@
 # create-web-site
-All base files used for creating a new site from start to finish. Including Saas, jade, js, browsersync, bourbon, font-awesome controlled by a gulp file. All ready configured
+All base files used for creating a new site from start to finish. Including Saas, Pug(jade), js, browsersync, bourbon, font-awesome controlled by a gulpfile and bower. All is ready & configured
 
-# What it does
-Use these file when you wan to create a web site. At the end you get all neccessary file to publish in a build folder. You should create your web site using Jade, Sass(scss). It's a lot quicker to use these technologies. Check a look on there web site.
+## What it does
+Use these files when you want to create a web site. At the end you get all neccessary file to publish a build folder. You should create your web site using Pug(Jade), Sass(scss). It's a lot quicker to use these technologies. Check a look on their web site.
 
-YOU MOST BE CONFORTABLE USING GULP
+###YOU MUST BE COmFORTABLE USING GULP
 
-Gulp does a lot a tasks by default:
+Gulp does a lot of tasks by default:
     1. It compiles scss files to css
-    2. It compiles jade files to html
-    3. It checks errors and formating if javascript
-    4. It creates 1x images
-    5. it Compress images
+    2. It compiles pug files to html
+    3. It checks errors and formatting
+    4. It creates 1x, 2x and 3x images.
+    5. It compresses images
     6. It concatenates and minifies css files
     7. It concatenates and uglifies js files (watch out for angular)
     8. It injects css and js files into html files
     9. It passes throught html to set critical css
-   10. It minify html files 
+   10. It minifies html files 
    11. It creates sitemaps.xml (for google)
    12. It uploads "build files" on your ftp server
    
@@ -25,7 +25,7 @@ You have 3 other functions to
 - test link (gulp testbuild)
 - test source file with browser-sync (gulp browser-sync)
 
-# Installation
+## Installation
 
   1. Install [node.js](https://nodejs.org/en/ "Node.js")
   2. Install [bower](https://bower.io "Bower")
@@ -35,30 +35,31 @@ You have 3 other functions to
   6. ``` bower install```
   
   
-# GULP function
+## GULP function
 
 ``` gulp css```
-Compiles you scss files into a css folde in scr folder.
-Runs autoprefixer on it
-Reload browsersync if needed
+Compiles your scss files into a css folder in scr folder.
+Runs autoprefixer on css
+Reloads browsersync if needed
 
 ``` gulp vet```
 Passes jshint on your javascript files
 
-``` gulp jade```
-Compiles Jade files in the src folder
+``` gulp Pug```
+Compiles Pug files in the src folder
 
 ``` gulp retina```
-Transforms any _2x.png, _2x.jpg or _2x.jpeg already into the images folder to 1x images keeping the 2x version into the same folder. ( Bourbon installed with bower use by defalut _2x not @2x.
+Transforms any _2x.png, _2x.jpg or _2x.jpeg already into the images folder to 1x images keeping the 2x version into the same folder.
+Creates also the 3x images if needed.( Bourbon installed with bower use by defalut _2x not @2x.
 
 ``` gulp image-optim```
-Optimises images for a lower file size.
+Optimises images to lower the files size.
 
 ``` gulp compile```
-Will run all previous task and it will uglyfy js, minify css, concatenate css and js qand will inject them into the htmls. It will save the htmls in a build folder. 
+Will run all previous tasks and it will uglyfy js, minify css, concatenate css and js and will inject them into the htmls. It will save the htmls in a build folder. 
 
 ``` gulp critical```
-Will put above the fold css inline into html (faster load page)
+Will put "above the fold" css inline into html (faster load page)
 
 ``` gulp minify_html```
 will minify html file

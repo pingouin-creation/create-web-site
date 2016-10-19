@@ -22,7 +22,7 @@
     "gulp-print": "*",
     "gulp-pug": "^3.0.4",
     "gulp-retinize": "*",
-    "gulp-resppnsive":"*",
+    "gulp-responsive":"*",
     "gulp-sass": "*",
     "gulp-sitemap": "*",
     "gulp-uglify": "*",

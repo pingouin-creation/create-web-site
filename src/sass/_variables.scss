@@ -1,9 +1,7 @@
 $base-font-size: 16px;
 
-$breakpoints: (
-  'small': 320px,
-  'med': 640px,
-  'large': 920px,
-  'wide': 1200px,
-  'mega': 1400px
-);
+$iphone-land: 640px;
+$tablet-portrait: 768px;
+$tablet-land: 1024px;
+$desktop: $tablet-land;
+$desktop-ultimate: 1920px;

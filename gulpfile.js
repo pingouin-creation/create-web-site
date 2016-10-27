@@ -180,7 +180,7 @@ gulp.task('sitemap',['minify_HTML'], function(){
 });
 
 gulp.task('watch', ['browser-sync'], function() {
-	gulp.watch('./src/js/*.js', ['vet']);
+	gulp.watch('./src/js/*.js').on('change', browsersync.reload);
 	gulp.watch('./src/sass/**/*', ['css']);
 	gulp.watch('./src/pug/*.pug', ['pug']).on('change', browsersync.reload);
 });

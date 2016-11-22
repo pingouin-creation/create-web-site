@@ -6,7 +6,10 @@ var checkPages = require('check-pages');
 var pngquant = require('imagemin-pngquant');
 var ftp = require( 'vinyl-ftp' );
 var gutil = require('gulp-util');
+var replace = require('gulp-replace-path');
 var $ = require('gulp-load-plugins')({lazy: true, rename :{'gulp-minify-html-2': 'minifyHTML'}});
+
+
 
 gulp.task('css', function(){
 return gulp
@@ -22,14 +25,34 @@ return gulp
 
 });
 
+
 gulp.task('pug', function(){
 	return gulp
-	.src('./src/pug/*.pug')
+	.src('./src/pug/index.pug')
 	.pipe($.pug({
 		pretty:true
 	}))
-	.pipe(gulp.dest('./src/'));
+	.pipe(gulp.dest('./src'));
 });
+
+gulp.task('pugservice', function(){
+	return gulp
+	.src('./src/pug/services/**/*.pug')
+	.pipe($.pug({
+		pretty:true
+	}))
+	.pipe(gulp.dest('./src/services'));
+});
+
+
+gulp.task('lint', function(){
+    return gulp
+    .src('./src/js/**/*.js')
+    .pipe($.jshint())
+    .pipe($.jshint.reporter('jshint-stylish'))
+
+})
+
 
 gulp.task('svg', function(){
     return gulp.src('src/images/**/*.svg')
@@ -37,45 +60,36 @@ gulp.task('svg', function(){
     .pipe(gulp.dest('./build/images'));
 });
 
-gulp.task('retina', function(){
+gulp.task('retina',['svg'], function(){
 
-    return gulp.src('./src/images/*.{jpg,png}')
+    return gulp.src(['./src/images/**/*.{jpg,png}', '!.src/images/optim'])
         .pipe($.responsive({
           // Resize all JPG images to three different sizes: 100, 200, and 400, 800 pixels
-          '*.jpg': [{
-            width: 100,
+          '**/*.jpg': [{
+            width: 600,
+            rename: { suffix: 'phone_2x' },
+          }, {
+            width: 960,
+            rename: { suffix: 'phone-land_2x' },
+          }, {
+            width: 1536,
+            rename: { suffix: 'tablet_2x' },
+          }, {
+            width: 1920,
             rename: { suffix: '' },
-          }, {
-            width: 200,
-            rename: { suffix: '_2x' },
-          }, {
-            width: 400,
-            rename: { suffix: '_3x' },
-          }, {
-            width: 800,
-            rename: { suffix: '_4x' },
             },{
-          width: 1600,
-            rename: { suffix: '_full' },
+          width: 2880,
+            rename: { suffix: '_2x' },
             },{
             // Compress, strip metadata, and rename original image
             rename: { suffix: '-original' },
           }],
           // Resize all PNG images to be retina ready
-          '*.png': [{
-            width: 100,
+          '**/*.png': [{
+            width: 72,
             }, {
-            width: 200,
-            rename: { suffix: '_2x' },
-            }, {
-            width: 400,
-            rename: { suffix: '_3x' },
-            }, {
-            width: 800,
-            rename: { suffix: '_4x' },
-            }, {
-            width: 1600,
-            rename: { suffix: '_full' },
+            width: 144,
+            rename: { suffix: '_2x' }
         }],
             }, {
           // Global configuration for all images
@@ -94,7 +108,7 @@ gulp.task('retina', function(){
 
 
 gulp.task('image-optim', ['retina'], function(){
-	 return gulp.src('./src/images/**/*')
+	 return gulp.src('./src/images/optim/**/*')
         .pipe($.imagemin({
             progressive: true,
             use: [pngquant()]
@@ -102,49 +116,47 @@ gulp.task('image-optim', ['retina'], function(){
         .pipe(gulp.dest('./build/images/'));
 });
 
+gulp.task('optim',['image-optim'], function(){
+    return del(['./build/images/optim/','./src/images/optim/']);
+});
 
-gulp.task('browser-sync',['css', 'pug'], function(){
+gulp.task('browser-sync',['compiled'], function(){
 	browsersync.init({
 		server: {
-			baseDir : './src/'
+			baseDir : './build/'
 			}
 		});
 });
 
 
-gulp.task('cleanbuild', function(done){
-	return del('./build/**/*');
-    done();
-});
-
-gulp.task('compiled',['cleanbuild','css', 'image-optim', 'pug'], function(){
+gulp.task('compiled',['css', 'pug'], function(){
 	return gulp.src('./src/**/*.html')
 	.pipe ($.useref())
 	.pipe($.if('*.js', $.uglify()))
 	.pipe($.if('*.css', $.csso()))
-	.pipe(gulp.dest('./build/'));
+	.pipe(gulp.dest('./build'));
 
 });
 
 gulp.task('critical',['compiled'], function(){
-	return gulp
-	.src('./build/*.html')
-	.pipe(critical({
-		base: './',
-		inline: true,
-		minify: true,
-		width: 1000,
-		height: 1000
-		 }))
-	.pipe(gulp.dest('./build/'));
+    gulp.task('critical', function () {
+    return gulp.src('build/**/*.html')
+        .pipe(critical({
+            base: 'build/',
+            inline: true,
+            minify:true,
+            ignore: ['@font-face','@import'],
+
+            css: 'build/css/all.css'})
+        )
+        .pipe(gulp.dest('build'));
+});
 });
 
 
 gulp.task('minify_HTML', ['critical'], function(){
-	var opts = {spare:true};
-
 	return gulp.src('./build/**/*.html')
-    .pipe($.minifyHTML(opts))
+    .pipe($.htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./build'));
 });
 

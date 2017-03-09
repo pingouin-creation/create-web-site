@@ -11,6 +11,9 @@ var $ = require('gulp-load-plugins')({lazy: true});
 
 
 
+
+
+
 gulp.task('css', function(){
 return gulp
 		.src('./src/sass/styles.scss')
@@ -28,7 +31,7 @@ return gulp
 
 gulp.task('pug',['pugfr','pugen'], function(){
 	return gulp
-	.src('./src/pug/*.pug')
+	.src('./src/pug/index.pug')
 	.pipe($.pug({
 		pretty:true
 	}))
@@ -52,6 +55,7 @@ gulp.task('pugen', function(){
 	}))
 	.pipe(gulp.dest('./src/en'));
 });
+
 
 gulp.task('lint', function(){
     return gulp
@@ -142,7 +146,7 @@ gulp.task('compiled',['css', 'pug'], function(){
 	.pipe ($.useref())
 	.pipe($.if('*.js', $.uglify()))
 	.pipe($.if('*.css', $.csso()))
-	.pipe(gulp.dest('./build/'));
+	.pipe(gulp.dest('./build'));
 
 });
 

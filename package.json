@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+<<<<<<< HEAD
       "devDependencies": {
         "bower": "*",
         "browser-sync": "*",
@@ -39,6 +40,41 @@
         "vinyl-ftp": "*"
       },
        "scripts": {
+=======
+    "bower": "*",
+    "browser-sync": "*",
+    "check-pages": "*",
+    "critical": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-csso": "*",
+    "gulp-htmlmin": "*",
+    "gulp-if": "*",
+    "gulp-imagemin": "*",
+    "gulp-jshint": "^2.0.2",
+    "gulp-load-plugins": "*",
+    "gulp-plumber": "*",
+    "gulp-print": "*",
+    "gulp-pug": "*",
+    "gulp-replace-path": "*",
+    "gulp-responsive": "*",
+    "gulp-retinize": "*",
+    "gulp-sass": "*",
+    "gulp-sitemap": "*",
+    "gulp-svgmin": "*",
+    "gulp-uglify": "*",
+    "gulp-useref": "*",
+    "gulp-util": "*",
+    "imagemin-pngquant": "*",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "pug-lint-config-emarsys": "*",
+    "useref": "*",
+    "vinyl-ftp": "*"
+  },
+  "scripts": {
+>>>>>>> 2d3eb2f487292d0a7465fe61eb4549e728ccbf6b
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

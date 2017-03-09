@@ -10,7 +10,7 @@
         "browser-sync": "*",
         "check-pages": "*",
         "critical": "*",
-        "del": "*",
+        "del": "*", 
         "gulp": "*",
         "gulp-autoprefixer": "*",
         "gulp-csso": "*",

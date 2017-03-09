@@ -3,8 +3,7 @@
   "authors": [
     "Maxime Trudel <max@pingouincreation.com>"
   ],
-  "description": "All base files used for creating a new site from start to finish. Including Saas, jade, js, browsersync, bourbon, font-awesome controlled by a gulp file. All ready configured",
-  "main": "",
+  "description": "All base files used for creating a new site from start to finish.",
   "license": "MIT",
   "homepage": "",
   "ignore": [
@@ -16,6 +15,8 @@
   ],
   "devDependencies": {
     "bourbon": "*",
-    "font-awesome": "*"
+    "font-awesome": "*",
+    "jquery": "*",
+    "sass-material-colors": "^0.0.5"
   }
 }

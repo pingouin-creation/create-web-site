@@ -16,10 +16,10 @@ Gulp does a lot a tasks by default:
     7. It concatenates and uglifies js files (watch out for angular)
     8. It injects css and js files into html files
     9. It passes throught html to set critical css
-   10. It minify html files 
+   10. It minify html files
    11. It creates sitemaps.xml (for google)
-   
-You have 3 other functions to 
+
+You have 3 other functions to
 - clean build folder (gulp cleanbuild)
 - test link (gulp testbuild)
 - test source file with browser-sync (gulp browser-sync)
@@ -32,8 +32,8 @@ You have 3 other functions to
   4. ``` npm install gulp -g```
   5. ``` npm install```
   6. ``` bower install```
-  
-  
+
+
 # GULP function
 
 ``` gulp css```
@@ -44,8 +44,8 @@ Reload browsersync if needed
 ``` gulp vet```
 Passes jshint on your javascript files
 
-``` gulp jade```
-Compiles Jade files in the src folder
+``` gulp pug```
+Compiles pug files in the src folder
 
 ``` gulp retina```
 Transforms any _2x.png, _2x.jpg or _2x.jpeg already into the images folder to 1x images keeping the 2x version into the same folder. ( Bourbon installed with bower use by defalut _2x not @2x.
@@ -55,7 +55,7 @@ Optimises images for a lower file size.
 
 
 ``` gulp compile```
-Will run all previous task and it will uglyfy js, minify css, concatenate css and js qand will inject them into the htmls. It will save the htmls in a build folder. 
+Will run all previous task and it will uglyfy js, minify css, concatenate css and js qand will inject them into the htmls. It will save the htmls in a build folder.
 
 ``` gulp critical```
 Will put above the fold css inline into html (faster load page)
@@ -80,5 +80,3 @@ Runs browser sync on your src folder
 
 ``` gulp clean-build```
 Deletes all files into the build folder.
-
-

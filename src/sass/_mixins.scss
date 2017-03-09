@@ -1,0 +1,98 @@
+//breakpoint
+
+@mixin media($breakpoints) {
+    @media (min-width: $breakpoints) {
+      @content;
+    }
+}
+
+//flexbox
+
+@mixin flexbox($direction: row, $wrap: nowrap, $alignh: space-between , $alignv: flex-start) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    @if $direction == 'row' or $direction == 'row-reverse' {
+        align-content: $alignv;
+        justify-content: $alignh;
+    } @else {
+        align-items: $alignh;
+        justify-content: $alignv;
+    }
+}
+
+@mixin flexitems($order: 0, $grow: 1, $shrink: 1, $basis: auto, $align-self: auto) {
+    align-self: $align-self;
+    flex: $grow $shrink $basis;
+    order: $order;
+}
+
+//image background
+
+@mixin cover-image($image, $ext) {
+
+    @media (min-width: 320px) {
+        background-image: url('#{$image}phone_2x.#{$ext}');
+        background-size: cover;
+        }
+    @media (min-width: 480px) {
+        background-image: url('#{$image}phone-land_2x.#{$ext}');
+        background-size: cover;
+            }
+
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) and (min-width: 768px) {
+        background-image: url('#{$image}tablet_2x.#{$ext}');
+        background-size: cover;
+        }
+    @media (min-width: 768px) {
+        background-image: url('#{$image}phone-land_2x.#{$ext}');
+        background-size: cover;
+        }
+    @media (min-width: 1024px) {
+        background-image: url('#{$image}tablet_2x.#{$ext}');
+        background-size: cover;
+        }
+    @media (min-width: 1400px) {
+        background-image: url('#{$image}tablet_2x.#{$ext}');
+        background-size: cover;
+        }
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) and (min-width: 1400px) {
+        background-image: url('#{$image}_2x.#{$ext}');
+        background-size: cover;
+        }
+    @media (min-width: 1920px) {
+        background-image: url('#{$image}.#{$ext}');
+        background-size: cover;
+        }
+}
+
+// 2 colone layout
+
+@mixin two-colonne {
+    @include flexbox(columns, wrap);
+    @include media($tablet-portrait) {
+        @include flexbox(row, nowrap, space-between, flex-start);
+    }
+}
+
+//material design box shadow
+
+@mixin boxshadow ($level) {
+
+    @if level == 0 {
+        box-shadow: 0;
+    } @else if $level == 1 {
+        box-shadow: 0 1px 3px $bs12, 0 1px 2px $bs24;
+    } @else if $level == 2 {
+        box-shadow: 0 3px 6px $bs16, 0 3px 6px $bs23;
+    } @else if $level == 3 {
+        box-shadow: 0 10px 20px $bs19, 0 6px 6px $bs23;
+    } @else if $level == 4 {
+        box-shadow: 0 14px 28px $bs25, 0 10px 10px $bs22;
+    } @else if $level == 5 {
+        box-shadow: 0 19px 38px $bs30, 0 15px 12px $bs22;
+    }
+
+}

@@ -1,6 +1,6 @@
 {
   "name": "Create-web-site",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "All base files used for creating a new site from start to finish. Including Saas, pug(jade), js, browsersync, bourbon, font-awesome controlled by a gulp file. All ready configured",
   "main": "index.js",
   "dependencies": {},

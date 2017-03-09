@@ -192,7 +192,7 @@ gulp.task('sitemap',['minify_HTML'], function(){
 	return gulp
 	.src(['./build/**/*.html'])
 	.pipe($.sitemap({
-		siteUrl: 'www.analystik.ca',
+		siteUrl: 'www.YOUR WEBSITE.com',
 		changefreq: 'weekly',
 
 	}))
@@ -207,9 +207,9 @@ gulp.task('watch', ['browser-sync'], function() {
 
 gulp.task('upload', ['build'], function(){
     var conn = ftp.create( {
-       host:     'ftp.signder.com',
-       user:     'analystikuser@signder.com',
-       password: 'lichette',
+       host:     'ftp.YOUR HOST.com',
+       user:     'username',
+       password: 'password',
        parallel: 5,
        log:      gutil.log
    } );

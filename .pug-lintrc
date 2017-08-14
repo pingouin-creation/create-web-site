@@ -1,7 +1,55 @@
 {
-  "extends": [
-    "emarsys"
-  ],
-  "someSetting": true,
-  "someOtherSetting": true
+
+"disallowAttributeInterpolation": true,
+
+"disallowAttributeTemplateString": true,
+
+"disallowBlockExpansion": true,
+
+"disallowClassAttributeWithStaticValue": true,
+
+"disallowDuplicateAttributes": true,
+
+"disallowHtmlText": true,
+
+"disallowIdAttributeWithStaticValue": true,
+
+"disallowMultipleLineBreaks": true,
+
+"disallowSpacesInsideAttributeBrackets": true,
+
+"disallowSpecificTags": ["b", "em", "strong","mark" ],
+
+"disallowStringInterpolation": true,
+
+"disallowTagInterpolation": true,
+
+"disallowTemplateString": "all",
+
+"requireClassLiteralsBeforeAttributes": true,
+
+"requireIdLiteralsBeforeAttributes": true,
+
+"requireLowerCaseAttributes": true,
+
+"requireLowerCaseTags": true,
+
+"requireSpaceAfterCodeOperator": true,
+
+"requireSpacesInsideAttributeBrackets": true,
+
+"requireStrictEqualityOperators": true,
+
+"validateAttributeQuoteMarks": "'",
+
+"validateAttributeSeparator": ", ",
+
+"validateDivTags": true,
+
+"validateIndentation": 4,
+
+"validateSelfClosingTags": true,
+
+"validateTemplateString": true
+
 }

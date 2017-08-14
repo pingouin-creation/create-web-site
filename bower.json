@@ -14,9 +14,8 @@
     "tests"
   ],
   "devDependencies": {
-    "bourbon": "*",
     "font-awesome": "*",
     "jquery": "*",
-    "sass-material-colors": "^0.0.5"
+    "sass-material-colors": "^0.0.5",
   }
 }

@@ -1,0 +1,29 @@
+mixin title(index)
+    title= index[1]
+
+mixin fbtitle(index)
+    meta(property='og:title', content= index[1])
+
+mixin fbdesc(index)
+    meta(property='og:description', content= index[2])
+
+mixin twitertitle-desc(index)
+    meta(name='twitter:title', content= index[1])
+    meta(name='twitter:description', content= index[2])
+
+mixin DC(index)
+    meta(name='DC.title', content= index[1])
+
+mixin desc-key(index)
+    meta(name='description', content= index[2])
+
+mixin alternate(index)
+    link(rel='alternate', href= index[3], hreflang='fr')
+    link(rel='alternate', href= index[4], hreflang='en')
+
+mixin picturepng(name, path, alttext, nmclass, nmid)
+    img(srcset = path + name +'_thumb.png 72w,' + path + name + '_thumb_2x.png 144w,' + path + name +'.png 580w,' + path + name + '_2x.png 1160w', class= nmclass, id=nmid)
+
+mixin picturesvg(name, alt, aria=false, nmclass)
+    svg(role='img', alt= alt, aria-hidden = aria, class= nmclass)
+        use(xlink:href='images/images.svg#' + name)/

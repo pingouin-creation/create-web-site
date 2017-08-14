@@ -1,0 +1,79 @@
+include ../_includes/mixins
+include ../_includes/variable-page
+
+block page
+    - var pagename = index
+
+block basetag
+    - var base = './'
+
+block projet
+
+head
+    base(href= base)
+    meta(charset='utf-8')
+    // build:css css/all.css
+    link(rel='stylesheet', href= base + 'css/styles.css')
+    // endbuild
+
+    +title(pagename)
+
+    meta(content='True', name='HandheldFriendly')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    //- Facebook
+
+    +fbtitle(pagename)
+    meta(property='og:type', content='website')
+    meta(property='og:url', content='https://www.analystik.ca/index.html')
+    meta(property='og:image', content='https://www.analystik.ca/images/analystik.png')
+    meta(property='og:image:width', content='300')
+    meta(property='og:image:height', content='174')
+    +fbdesc(pagename)
+
+    //- Twitter
+
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:site', content='@Analystik')
+    meta(name='twitter:creator', content='@Analystik')
+    +twitertitle-desc(pagename)
+    meta(name='twitter:image:src', content='https://www.analystik.ca/images/analystik.png')
+
+    //-geo
+
+    +DC(pagename)
+    meta(name='DC.title', content='LEADER montréalais avec 30 ans d’expérience dans le DÉVELOPPEMENT D’APPLICATION WEB / MOBILES et WINDOWS SUR MESURE')
+    meta(name='geo.region', content='CA-QC')
+    meta(name='geo.placename', content='1430 Belanger street, Montreal, Quebec, Canada')
+    meta(name='geo.position', content='45.544504;-73.605244')
+    meta(name='ICBM', content='45.544504, -73.605244')
+
+    //- keyword description
+
+    +desc-key(pagename)
+    meta(name='msapplication-config', content='browserconfig.xml')
+    meta(name='robots', content='index, follow')
+    meta(name='author', content='Analystik')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    +alternate(pagename)
+    link(rel='home', href='https://www.analystik.ca')
+    link(rel='index', href='https://www.analystik.ca/sitemap.xml')
+
+    //- fav icon
+
+    link(rel='apple-touch-icon', sizes='57x57', href='favicons/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='favicons/apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='favicons/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='favicons/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='favicons/apple-touch-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='favicons/apple-touch-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='favicons/apple-touch-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='favicons/apple-touch-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='favicons/apple-touch-icon-180x180.png')
+    link(rel='icon', type='image/png', href='favicons/favicon-192x192.png', sizes='192x192')
+    link(rel='icon', type='image/png', href='favicons/favicon-160x160.png', sizes='160x160')
+    link(rel='icon', type='image/png', href='favicons/favicon-96x96.png', sizes='96x96')
+    link(rel='icon', type='image/png', href='favicons/favicon-16x16.png', sizes='16x16')
+    link(rel='icon', type='image/png', href='favicons/favicon-32x32.png', sizes='32x32')
+    meta(name='msapplication-TileColor', content='#e95240')
+    meta(name='msapplication-TileImage', content='favicons/mstile-144x144.png')

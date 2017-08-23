@@ -1,0 +1,19 @@
+%sticky {
+    @include flexbox(row, nowrap, space-between, center);
+    background-color: $white;
+    border-bottom: 2px solid $accent;
+    box-shadow: 0 1px 5px $bs22;
+    height: em(42);
+    left: 0;
+    margin: 0 auto;
+    padding-top: 0;
+    position: fixed;
+    top: em(-42);
+    transition: top .2s ease-in-out;
+    width: 100%;
+    z-index: 999;
+
+    &.visible {
+        top: 0;
+    }
+}

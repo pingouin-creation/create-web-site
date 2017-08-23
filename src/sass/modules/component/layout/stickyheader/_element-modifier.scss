@@ -1,0 +1,5 @@
+.row {
+ &.sticky{
+     @extend %sticky;
+    }
+}

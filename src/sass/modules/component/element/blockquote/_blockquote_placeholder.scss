@@ -1,0 +1,18 @@
+%blockquote {
+    margin: 0 0 1em;
+    padding: .5625em 1.25em 0 1.1875em;
+    border-left: 1px solid lighten($textcolor, 40%);
+    color: lighten($textcolor, 40%);
+    line-height: 1.6;
+
+    cite {
+        color: lighten($textcolor, 40%);
+
+        &::before {
+            content: '— ';
+            color: lighten($textcolor, 40%);
+            font-style: italic;
+            font-size: ms(-1);
+         }
+    }
+}

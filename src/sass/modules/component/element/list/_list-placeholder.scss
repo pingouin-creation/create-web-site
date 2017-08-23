@@ -1,0 +1,169 @@
+%table {
+    @include flexbox(column, no-wrap, space-between);
+    border: 1px solid $input-border;
+    font-size: ms(0);
+    font-family: sans-serif;
+    width: 99.8%;
+    position: relative;
+
+    .head {
+        @include flexbox;
+        width: 100%;
+        box-sizing: border-box;
+        padding: em(5) 0;
+        border-bottom: 1px solid $input-border;
+        position: absolute;
+        background-color: $accent;
+        top: 0;
+
+        > .col {
+            @extend %item;
+            border-right: 1px solid $white;
+            padding-left: em(10);
+            text-align: left;
+            color: $white;
+
+            &.xsmall {
+                flex: 1 0 0;
+            }
+
+            &.small {
+                flex: 2 0 0;
+            }
+
+            &.medium {
+                flex: 3 0 0;
+            }
+
+            &.large {
+                flex: 4 0 0;
+            }
+
+            &.xlarge {
+                flex: 5 0 0;
+            }
+
+            &:first-child {
+                margin-left: em(10);
+            }
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+
+    .listbody {
+        margin-top: em(26);
+        overflow-y: auto;
+        display: block;
+        height: em(29);
+        width: 100%;
+
+        &.line1 {
+            height: em(29);
+        }
+
+        &.line2 {
+            height: em(60);
+        }
+
+        &.line3 {
+            height: em(86);
+        }
+
+        &.line4 {
+            height: em(114);
+        }
+
+        &.line5 {
+            height: em(142);
+        }
+
+        &.line6 {
+            height: em(166);
+        }
+
+        &.line7 {
+            height: em(194);
+        }
+
+        &.line8 {
+            height: em(222);
+        }
+
+        &.line9 {
+            height: em(248);
+        }
+
+        &.line10 {
+            height: em(278);
+        }
+
+        .row {
+            @include flexbox;
+            width: 100%;
+            box-sizing: border-box;
+            padding-top: em(5);
+            text-decoration: none;
+
+            &.selectedRow {
+               background-color: $selection;
+            }
+            &:hover {
+               background-color: lighten($selection, 10%);
+               cursor: pointer;
+            }
+
+            > .col {
+                @extend %item;
+
+                &.xsmall {
+                    flex: 1 0 0;
+                }
+
+                &.small {
+                    flex: 2 0 0;
+                }
+
+                &.medium {
+                    flex: 3 0 0;
+                }
+
+                &.large {
+                    flex: 4 0 0;
+                }
+
+                &.xlarge {
+                    flex: 5 0 0;
+                }
+
+                &.left {
+                    justify-content: flex-start;
+                    text-align: left;
+                }
+
+                &.right {
+                    justify-content: flex-end;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+%item {
+    @include flexbox(row, nowrap, center);
+    flex: 1 0 0;
+    padding: 0 em(10);
+    word-break: break-word;
+    text-align: center;
+
+    &:first-child {
+            margin-left: em(20);
+        }
+
+     &.left {
+         justify-content: flex-start;
+     }
+}

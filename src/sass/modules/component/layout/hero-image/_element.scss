@@ -1,0 +1,18 @@
+// .ge{
+//     @cover_image('image_path',extention,cover )
+// }
+
+// the path of the image must be between signlequote it's from the final css file,
+// extention should be jpg or gif, size is cover or contain. 90% it will be cover.
+
+
+// base image should be 1920px width
+//phone-land_2x = 960px
+//tablet_2x = 1536px
+//_2x = 2880px
+//_phone 2x =  600px
+
+//you can paste an image of 2880px width in the gulp file to create all version
+
+
+@warn 'you need to create your element in hero-image/_element.scss'

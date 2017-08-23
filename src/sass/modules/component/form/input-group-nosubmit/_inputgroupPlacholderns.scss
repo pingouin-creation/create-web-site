@@ -1,0 +1,28 @@
+%input-group-noSubmit {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    border: 0;
+
+    & > :first-child {
+        border-radius: 0;
+    }
+
+    & > :last-child {
+        border-radius: 0;
+
+    }
+
+    label {
+        @extend %label;
+        font-size: ms(0);
+        background-color: $input-border;
+        padding: em(5) .5em;
+    }
+
+    input {
+        @extend %input;
+        border-left: 0;
+        height: auto;
+    }
+}

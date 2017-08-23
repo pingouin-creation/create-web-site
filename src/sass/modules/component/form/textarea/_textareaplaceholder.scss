@@ -1,0 +1,71 @@
+%textarea {
+    border: 1px solid $input-border;
+    padding: em(1) 0 em(1) em(4);
+    color: $textcolor;
+    background-color: $white;
+    font-size: ms(0);
+    font-weight: 500;
+    width: 100%;
+    height: em(64);
+    resize: none;
+    overflow: auto;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 2px lighten($input-shadow, 5%);
+    transition: box-shadow .3s;
+
+    &:focus {
+        outline: none;
+        border: 1px solid darken($input-border, 15%);
+        box-shadow: inset 0 1px 2px $input-shadow;
+    }
+
+    &::placeholder {
+        font-style: italic;
+        font-family: sans-serif;
+    }
+
+    &:disabled {
+        color: lighten($black, 10%);
+        background-color: $disabled;
+    }
+
+    &.line1 {
+        height: em(21);
+    }
+
+    &.line2 {
+        height: em(39);
+    }
+
+    &.line3 {
+        height: em(57);
+    }
+
+    &.line4 {
+        height: em(76);
+    }
+
+    &.line5 {
+        height: em(94);
+    }
+
+    &.line6 {
+        height: em(113);
+    }
+
+    &.line7 {
+        height: em(131);
+    }
+
+    &.line8 {
+        height: em(148);
+    }
+
+    &.line9 {
+        height: em(166);
+    }
+
+    &.line10 {
+        height: em(185);
+    }
+}

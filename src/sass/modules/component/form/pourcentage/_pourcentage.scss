@@ -1,0 +1,13 @@
+%pourcent {
+    @extend %currency;
+    position: relative;
+
+
+    &::after {
+        content: '%';
+    }
+
+    input {
+        padding-right: em(35);
+    }
+}

@@ -1,0 +1,67 @@
+//color //
+
+$white: #fff;
+$black: #000;
+$accent: #24a6d4;
+
+$textcolor: #444;
+$title: $accent;
+$link: $accent;
+
+
+$selection: #b4d5fe;
+
+//component
+$input-shadow: rgba(10, 10, 10, .1);
+$button-bg: $accent;
+$input-color-dark: #999;
+$input-border: lighten($input-color-dark, 20%);
+$disabled: #e9e9e9;
+/// color message
+$alert: #f44;
+$warning: #f0ad4e;
+$success:  #5cb85c;
+
+// progress
+$progress-base: #09c;
+$light: rgba(255, 255, 255, .15);
+$light25: rgba(255, 255, 255, .25);
+$progress-shadow: #ccc;
+
+
+//normal color
+$primary: #004070;
+$secondary: #fdb812;
+
+/// brand color
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #b00;
+$vimeo: #1ab7ea;
+$tumblr: #32506d;
+$instagram: #bc2a8d;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5b9a68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #eb4823;
+$yahoo: #7b0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
+
+//shadow
+
+$bs12: rgba(0, 0, 0, .12);
+$bs16: rgba(0, 0, 0, .16);
+$bs19: rgba(0, 0, 0, .19);
+$bs22: rgba(0, 0, 0, .22);
+$bs23: rgba(0, 0, 0, .23);
+$bs24: rgba(0, 0, 0, .24);
+$bs25: rgba(0, 0, 0, .25);
+$bs30: rgba(0, 0, 0, .3);

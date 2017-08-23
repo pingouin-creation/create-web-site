@@ -1,0 +1,5 @@
+.col {
+    &.pourcent {
+        @extend %pourcent;
+    }
+}

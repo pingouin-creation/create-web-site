@@ -1,0 +1,20 @@
+%tooltips {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: em(20);
+    text-overflow: clip;
+    font-family: sans-serif;
+    background-color: $accent;
+    height: em(20);
+    padding-top: em(2);
+    border-radius: em(3);
+
+
+        &::before {
+            content: '?';
+            color: $white;
+            padding-left: em(5);
+            padding-right: em(20);
+        }
+    }

@@ -1,0 +1,45 @@
+%currency {
+    @include flexbox(column, nowrap, space-between);
+    box-sizing: border-box;
+    position: relative;
+
+
+    &::after {
+        content: '$';
+        padding: em(3) .5em;
+        position: absolute;
+        font-family: sans-serif;
+        color: $white;
+        background-color: $accent;
+        display: flex;
+        top: em(17);
+        height: em(18);
+        right: em(5);
+    }
+
+    label {
+        @extend %label;
+        padding-top: 0;
+    }
+
+     input {
+        @extend %input;
+        height: em(23);
+        margin-left: 0;
+        text-align: right;
+        margin-right: em(17);
+        width: 100%;
+        padding-right: em(30);
+
+            &:focus {
+                @extend %input;
+            }
+
+            &::-webkit-inner-spin-button,
+            ::-webkit-outer-spin-button {
+                appearance: none;
+                margin: 0;
+            }
+
+        }
+    }

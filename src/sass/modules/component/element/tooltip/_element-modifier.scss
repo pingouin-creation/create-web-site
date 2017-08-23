@@ -1,0 +1,10 @@
+.tooltip-left {
+    @extend %tooltips;
+    @include tooltips(left);
+}
+
+.tooltip-right {
+    @extend %tooltips;
+    @include tooltips(right);
+
+}

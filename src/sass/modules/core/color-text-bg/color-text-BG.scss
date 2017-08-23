@@ -1,0 +1,54 @@
+﻿$color-list:
+$white,
+$black,
+$accent,
+$primary,
+$secondary,
+$textcolor,
+$alert,
+$warning,
+$success,
+//$twitter,
+//$facebook,
+//$googleplus,
+//$pinterest,
+//$linkedin,
+//$youtube,
+//$vimeo,
+//$instagram,
+//$flickr,
+//$dribbble,
+//$foursquare;
+;
+$color-name:
+white,
+black,
+accent,
+primary,
+secondary,
+textcolor,
+alert,
+warning,
+success,
+//twitter,
+//facebook,
+//googleplus,
+//pinterest,
+//linkedin,
+//youtube,
+//vimeo,
+//instagram,
+//flickr,
+//dribbble,
+//foursquare;
+;
+
+
+@for $i from 1 through length($color-list) {
+    .textcolor-#{nth($color-name,$i)} {
+        color: nth($color-list, $i);
+    }
+    .bgcolor-#{nth($color-name, $i)} {
+        background-color: nth($color-list, $i);
+    }
+}

@@ -1,0 +1,6 @@
+.row,
+.col {
+    &.accordion-icon {
+        @extend %accordion-icon;
+    }
+}

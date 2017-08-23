@@ -1,0 +1,12 @@
+@mixin flexbox($direction: row, $wrap: nowrap, $alignh: space-between , $alignv: center) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    @if $direction == 'row' or $direction == 'row-reverse' {
+        justify-content: $alignh;
+        align-items: $alignv;
+    } @else {
+        align-items: $alignh;
+        justify-content: $alignv;
+    }
+}

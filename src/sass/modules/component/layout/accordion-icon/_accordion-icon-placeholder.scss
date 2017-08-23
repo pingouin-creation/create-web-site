@@ -1,0 +1,46 @@
+%accordion-icon {
+    display: block;
+    background-color: $accent;
+
+    &> h2 {
+        width: 100%;
+        display: inline-block;
+        height: em(20);
+        position: relative;
+        padding: 0 em(10);
+        box-sizing: border-box;
+        color: $white;
+        font-size: ms(2);
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        margin: em(5) 0 0;
+        padding-bottom: em(15);
+        font-family: sans-serif;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='24' height='32' viewBox='0 0 24 32'><polygon points='0,0 0,32 24,16' style='fill:" + $white + " '></polygon></svg>");
+        background-origin: content-box;
+        background-position: right 0;
+        background-repeat: no-repeat;
+        background-size: em(10);
+    }
+
+    & > .col,
+        .row {
+            display: none;
+    }
+
+    &.open {
+        h2 {
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 16,24 32,0' style='fill:" + $white + " '></polygon></svg>");
+            background-origin: content-box;
+            background-position: right center;
+            background-repeat: no-repeat;
+            background-size: em(20);
+        }
+
+        & > .col,
+            .row {
+                display: flex;
+        }
+    }
+}

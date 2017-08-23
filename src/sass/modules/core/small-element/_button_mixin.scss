@@ -1,0 +1,31 @@
+@mixin button($color: $accent, $shape: round){
+    margin: 0;
+    white-space: 0;
+    padding: .5em 1em;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    height: auto;
+    background-color: $color;
+    color: $white;
+    font-size: ms(0);
+    cursor: pointer;
+    border: 0;
+    @if $shape == 'round' {
+    border-radius: 50em;
+} @else {
+    border-radius: 0;
+}
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: darken($color, 10%);
+    }
+
+    &:disabled{
+        background-color: $disabled;
+    }
+}

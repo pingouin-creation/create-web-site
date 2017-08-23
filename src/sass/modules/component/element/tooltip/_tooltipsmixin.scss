@@ -1,0 +1,52 @@
+@mixin tooltips($direction: left) {
+    @if $direction == 'left' {
+
+   &:hover {
+      width: auto;
+      margin: 0 em(7);
+      background-color: $accent;
+      color: $white;
+      white-space: normal;
+      overflow: auto;
+      padding: em(16);
+      border-radius: em(6);
+      position: absolute;
+      z-index: 999;
+      left: 0;
+      height: auto;
+
+
+        &::before {
+          content: '';
+          padding-left: em(0);
+          padding-right: em(0);
+          }
+      }
+
+    } @else {
+
+
+        &:hover {
+           width: auto;
+           margin: 0 em(7);
+           background-color: $accent;
+           color: $white;
+           white-space: normal;
+           overflow: auto;
+           padding: em(16);
+           border-radius: em(6);
+           position: absolute;
+           z-index: 999;
+           right: 0;
+           left: auto;
+           height: auto;
+
+           &::before {
+               content: '';
+               padding-left: em(0);
+               padding-right: em(0);
+           }
+
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.required {
+    position: relative;
+
+    &::after {
+        content: '*';
+        display: inline-block;
+        width: em(10);
+        height: em(11);
+        font-size: ms(-1);
+        font-family: $normal;
+        color: $star-red;
+    }
+}

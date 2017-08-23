@@ -1,0 +1,39 @@
+@mixin cover-image($image, $ext, $size) {
+
+    @media (min-width: 768px) {
+        background-image: url('#{$image}phone-land_2x.#{$ext}');
+        background-size: $size;
+        }
+    @media (min-width: 1024px) {
+        background-image: url('#{$image}tablet_2x.#{$ext}');
+        background-size: $size;
+        }
+    @media (min-width: 1400px) {
+        background-image: url('#{$image}tablet_2x.#{$ext}');
+        background-size: $size;
+        }
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) and (min-width: 1400px),
+        (min-resolution: 1.5dppx) and (min-width: 1400px) {
+            background-image: url('#{$image}_2x.#{$ext}');
+            background-size: $size;
+        }
+    @media (min-width: 1920px) {
+        background-image: url('#{$image}.#{$ext}');
+        background-size: $size;
+        }
+
+    @media (min-resolution: 144dpi) and (min-width: 768px) and (max-width: 1024px),
+        (min-resolution: 1.5dppx) and (min-width: 768px) and (max-width: 1024px) {
+            background-image: url('#{$image}tablet_2x.#{$ext}');
+            background-size: $size;
+        }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+        background-image: url('#{$image}phone-land_2x.#{$ext}');
+        background-size: $size;
+            }
+
+    @media (min-width: 300px) and (max-width: 480px ){
+        background-image: url('#{$image}phone_2x.#{$ext}');
+        background-size: $size;}
+}

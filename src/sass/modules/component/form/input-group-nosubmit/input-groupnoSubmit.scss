@@ -1,0 +1,6 @@
+@import 'inputgroupPlacholderns';
+
+
+.input-group-noSubmit {
+    @extend %input-group-noSubmit;
+}

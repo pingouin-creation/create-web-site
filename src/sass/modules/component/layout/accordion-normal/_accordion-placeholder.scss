@@ -1,0 +1,33 @@
+%accordion {
+    display: block;
+    background-color: $accent;
+
+    &> h2 {
+        width: 100%;
+        display: inline-block;
+        height: em(20);
+        position: relative;
+        padding: 0 em(10);
+        box-sizing: border-box;
+        color: $white;
+        font-size: ms(2);
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: em(5) 0 0;
+        padding-bottom: em(15);
+        font-family: sans-serif;
+    }
+
+    & > .col,
+        .row {
+            display: none;
+    }
+
+    &.open {
+
+        & > .col,
+            .row {
+                display: flex;
+        }
+    }
+}

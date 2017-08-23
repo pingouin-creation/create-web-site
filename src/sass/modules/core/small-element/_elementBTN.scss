@@ -1,0 +1,17 @@
+button {
+    @include button;
+
+    &[type='submit'] {
+        @include button;
+    }
+}
+
+input {
+    &[type='submit'] {
+        @include button;
+    }
+}
+
+%button-squared {
+    @include button($accent, square)
+}

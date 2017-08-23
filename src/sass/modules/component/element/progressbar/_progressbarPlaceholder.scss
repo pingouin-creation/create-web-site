@@ -1,0 +1,59 @@
+%progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: em(20);
+
+    &.bg-color-success {
+        &::-webkit-progress-value {
+            background-image:
+            linear-gradient(45deg, $light 25%, transparent 25%, transparent 50%, $light 50%, $light 75%, transparent 75%, transparent),
+            linear-gradient($light25, $bs25),
+            linear-gradient(to right, $progress-base, $success);
+
+                border-radius: 2px;
+                background-size: 40px 40px, 100% 100%, 100% 100%;
+            }
+    }
+
+    &.bg-color-warning {
+        &::-webkit-progress-value {
+            background-image:
+            linear-gradient(45deg, $light 25%, transparent 25%, transparent 50%, $light 50%, $light 75%, transparent 75%, transparent),
+            linear-gradient($light25, $bs25),
+            linear-gradient(to right, $progress-base, $warning);
+
+                border-radius: 2px;
+                background-size: 40px 40px, 100% 100%, 100% 100%;
+            }
+    }
+
+    &.bg-color-alert {
+        &::-webkit-progress-value {
+            background-image:
+            linear-gradient(45deg, $light 25%, transparent 25%, transparent 50%, $light 50%, $light 75%, transparent 75%, transparent),
+            linear-gradient($light25, $bs25),
+            linear-gradient(to right, $progress-base, $alert);
+
+                border-radius: 2px;
+                background-size: 40px 40px, 100% 100%, 100% 100%;
+            }
+    }
+
+  &::-webkit-progress-bar {
+    background-color: $input-border;
+    border-radius: em(2);
+    box-shadow: 0 em(2) em(5) $progress-shadow inset;
+    }
+
+    &::-webkit-progress-value {
+
+          background-image:
+               linear-gradient(45deg, $light 25%, transparent 25%, transparent 50%, $light 50%, $light 75%, transparent 75%, transparent),
+               linear-gradient($light25, $bs25),
+               linear-gradient(to right, $progress-base, $success);
+
+            border-radius: 2px;
+            background-size: 40px 40px, 100% 100%, 100% 100%;
+        }
+}

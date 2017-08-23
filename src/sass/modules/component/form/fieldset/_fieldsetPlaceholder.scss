@@ -1,0 +1,12 @@
+%fieldset {
+    border: 1px solid $input-border;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 4px;
+
+    legend {
+        font-size: ms(-1);
+        font-family: $normal;
+        font-weight: 500;
+    }
+}

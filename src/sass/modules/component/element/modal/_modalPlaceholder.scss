@@ -1,0 +1,36 @@
+%modal-container {
+    animation: slide 200ms ease-out forwards;
+    background-color: $white;
+    border-radius: em(5);
+    left: 50%;
+    max-width: em(400);
+    padding: em(20);
+    position: fixed;
+    transform: translate(-50%, -200%);
+    width: 70%;
+
+.modal {
+    &::before {
+        background-color: $bs12;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+        transform: translate(-50%, -200%);
+    }
+
+    100% {
+        top: 20%;
+        transform: translate(-50%, 0%);
+
+    }
+}

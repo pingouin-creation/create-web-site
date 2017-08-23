@@ -1,0 +1,41 @@
+%firsttitle {
+    font-size: ms(2);
+    @include media($tablet-portrait) {
+        font-size: ms(5);
+    }
+}
+
+%secondtitle {
+    font-size: ms(1);
+    @include media($tablet-portrait) {
+        font-size: ms(4);
+    }
+}
+
+%thirdtitle {
+    font-size: ms(1);
+    @include media($tablet-portrait) {
+        font-size: ms(3);
+    }
+}
+
+%fourthtitle {
+    font-size: em(18);
+    @include media($tablet-portrait) {
+        font-size: ms(2);
+    }
+}
+
+%fifthtitle {
+    font-size: em(17);
+    @include media($tablet-portrait) {
+        font-size: ms(1);
+    }
+}
+
+%sixthtitle {
+    font-size: ms(0);
+    @include media($tablet-portrait) {
+        font-size: ms(0);
+    }
+}

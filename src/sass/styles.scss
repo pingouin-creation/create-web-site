@@ -1,4 +1,15 @@
 @import 'variables';
-@import '../../node_modules/modularscale-sass/stylesheets/_modular-scale.scss';
 @import '../../bower_components/font-awesome/scss/font-awesome';
 @import 'mixins';
+@import 'modules/core/core';
+@import 'modules/component/layout/accordion-icon/accordion-icon';
+@import 'modules/component/form/formElement';
+@import 'modules/component/form/pourcentage/pourcentageinput';
+@import 'modules/component/form/radiobutton/radiobutton';
+@import 'modules/component/form/checkbox/checkbox';
+@import 'modules/component/form/dropdown/dropdown';
+@import 'modules/component/form/input-group-nosubmit/input-groupnoSubmit';
+@import 'modules/component/element/progressbar/progressbar';
+@import 'modules/component/form/textarea/textarea';
+@import 'modules/component/element/list/list';
+@import 'modules/component/element/tooltip/tooltip';

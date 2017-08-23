@@ -1,0 +1,23 @@
+h1 {
+    @extend %firsttitle;
+}
+
+h2 {
+    @extend %secondtitle;
+}
+
+h3 {
+    @extend %thirdtitle;
+}
+
+h4 {
+    @extend %fourthtitle;
+}
+
+h5 {
+    @extend %fifthtitle;
+}
+
+h6 {
+    @extend %sixthtitle;
+}

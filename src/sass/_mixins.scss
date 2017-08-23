@@ -1,10 +1,6 @@
 //breakpoint
 
-@mixin media($breakpoints) {
-    @media (min-width: $breakpoints) {
-      @content;
-    }
-}
+
 
 //flexbox
 

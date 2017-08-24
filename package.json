@@ -9,6 +9,7 @@
     "browser-sync": "*",
     "check-pages": "*",
     "critical": "*",
+    "css-reset-and-normalize-sass": "^0.1.2",
     "del": "*",
     "eslint": "*",
     "gulp": "*",
@@ -55,4 +56,4 @@
   },
   "author": "",
   "license": "ISC"
-  }
+}

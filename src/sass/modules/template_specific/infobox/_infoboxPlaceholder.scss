@@ -1,0 +1,64 @@
+%infobox {
+    width: 100%;
+    margin: 0 em(20);
+    border: 1px solid $input-border;
+    background-color: $progress-shadow;
+    min-width: em(320);
+
+    .header {
+        width: 100%;
+        padding: em(9) 0 em(9) em(7);
+        position: relative;
+        margin-bottom: em(10);
+        color: $white;
+        background-color: $accent;
+        text-transform: uppercase;
+        overflow: hidden;
+
+        &::after {
+            width: 0;
+            height: 0;
+            border-left: em(10) solid transparent;
+            border-right: em(10) solid transparent;
+            border-top: em(10) solid $accent;
+            position: absolute;
+            left: em(8);
+            top: em(32);
+
+        }
+
+    }
+
+    p {
+        color: $textcolor;
+        margin-left: em(8);
+        line-height: 1.6;
+
+        &.title {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        a {
+            color: $accent;
+
+            &:hover {
+                color: lighten($accent, 10%);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    hr {
+            border-top: 1px solid $input-border;
+            width: 100%;
+    }
+
+    .labeltxt {
+        color: $accent;
+    }
+
+
+
+
+}

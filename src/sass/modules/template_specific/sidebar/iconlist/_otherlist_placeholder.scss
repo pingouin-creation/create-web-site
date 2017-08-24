@@ -1,0 +1,26 @@
+%iconlist {
+    li {
+        a {
+            color: $accent;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: lighten($accent, 10%);
+            }
+
+            i {
+                color: $accent;
+
+            }
+        }
+
+        &.vide {
+            a {
+                i {
+                    color: $disabled;
+                }
+            }
+        }
+    }
+}

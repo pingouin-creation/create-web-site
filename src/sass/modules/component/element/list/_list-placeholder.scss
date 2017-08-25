@@ -1,27 +1,27 @@
 %table {
     @include flexbox(column, no-wrap, space-between);
     border: 1px solid $input-border;
-    font-size: ms(0);
     font-family: sans-serif;
-    width: 99.8%;
+    font-size: ms(0);
     position: relative;
+    width: 99.8%;
 
     .head {
         @include flexbox;
-        width: 100%;
+        background-color: $accent;
+        border-bottom: 1px solid $input-border;
         box-sizing: border-box;
         padding: em(5) 0;
-        border-bottom: 1px solid $input-border;
         position: absolute;
-        background-color: $accent;
         top: 0;
+        width: 100%;
 
         > .col {
             @extend %item;
             border-right: 1px solid $white;
+            color: $white;
             padding-left: em(10);
             text-align: left;
-            color: $white;
 
             &.xsmall {
                 flex: 1 0 0;
@@ -54,10 +54,10 @@
     }
 
     .listbody {
-        margin-top: em(26);
-        overflow-y: auto;
         display: block;
         height: em(29);
+        margin-top: em(26);
+        overflow-y: auto;
         width: 100%;
 
         &.line1 {
@@ -102,17 +102,18 @@
 
         .row {
             @include flexbox;
-            width: 100%;
             box-sizing: border-box;
             padding-top: em(5);
             text-decoration: none;
+            width: 100%;
 
-            &.selectedRow {
-               background-color: $selection;
+            &.selected-row {
+                background-color: $selection;
             }
+
             &:hover {
-               background-color: lighten($selection, 10%);
-               cursor: pointer;
+                background-color: lighten($selection, 10%);
+                cursor: pointer;
             }
 
             > .col {
@@ -156,14 +157,14 @@
     @include flexbox(row, nowrap, center);
     flex: 1 0 0;
     padding: 0 em(10);
-    word-break: break-word;
     text-align: center;
+    word-break: break-word;
 
     &:first-child {
-            margin-left: em(20);
-        }
+        margin-left: em(20);
+    }
 
-     &.left {
-         justify-content: flex-start;
-     }
+    &.left {
+        justify-content: flex-start;
+    }
 }

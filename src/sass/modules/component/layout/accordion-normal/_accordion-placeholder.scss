@@ -1,33 +1,32 @@
 %accordion {
-    display: block;
     background-color: $accent;
+    display: block;
 
     &> h2 {
-        width: 100%;
-        display: inline-block;
-        height: em(20);
-        position: relative;
-        padding: 0 em(10);
         box-sizing: border-box;
         color: $white;
-        font-size: ms(2);
-        text-transform: uppercase;
-        font-weight: bold;
-        margin: em(5) 0 0;
-        padding-bottom: em(15);
+        display: inline-block;
         font-family: sans-serif;
+        font-size: ms(2);
+        font-weight: bold;
+        height: em(20);
+        margin: em(5) 0 0;
+        padding: 0 em(10);
+        padding-bottom: em(15);
+        position: relative;
+        text-transform: uppercase;
+        width: 100%;
     }
 
     & > .col,
-        .row {
-            display: none;
+    .row {
+        display: none;
     }
 
     &.open {
-
         & > .col,
-            .row {
-                display: flex;
+        .row {
+            display: flex;
         }
     }
 }

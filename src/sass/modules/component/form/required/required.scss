@@ -2,12 +2,12 @@
     position: relative;
 
     &::after {
+        color: $star-red;
         content: '*';
         display: inline-block;
-        width: em(10);
-        height: em(11);
-        font-size: ms(-1);
         font-family: $normal;
-        color: $star-red;
+        font-size: ms(-1);
+        height: em(11);
+        width: em(10);
     }
 }

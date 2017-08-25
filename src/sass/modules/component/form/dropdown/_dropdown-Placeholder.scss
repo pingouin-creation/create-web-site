@@ -1,12 +1,14 @@
 %select {
     @extend %input;
     appearance: none;
+    background-color: $white;
+    //sass-lint:disable quotes
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill:" + $accent + " '></polygon></svg>");
+    //sass-lint:enable quotes
     background-origin: content-box;
     background-position: right center;
     background-repeat: no-repeat;
     background-size: em(9) em(6);
-    background-color: $white;
 
 
   }

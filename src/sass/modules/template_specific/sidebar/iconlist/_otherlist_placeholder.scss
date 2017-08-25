@@ -5,13 +5,12 @@
             text-decoration: none;
 
             &:hover {
-                text-decoration: underline;
                 color: lighten($accent, 10%);
+                text-decoration: underline;
             }
 
             i {
                 color: $accent;
-
             }
         }
 

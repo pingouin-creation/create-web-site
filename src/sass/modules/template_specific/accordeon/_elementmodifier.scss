@@ -4,15 +4,15 @@
 
     &> h2 {
         @extend %titletemplate;
-        height: em(56);
-        padding: em(16);
-        color: $textcolor;
-        text-transform: none;
-        font-weight: 300;
-        cursor: pointer;
-        margin: 0;
-        padding-bottom: em(16);
         background-color: $disabled;
+        color: $textcolor;
+        cursor: pointer;
+        font-weight: 300;
+        height: em(56);
+        margin: 0;
+        padding: em(16);
+        padding-bottom: em(16);
+        text-transform: none;
 
         &i {
             transform: rotate(0);

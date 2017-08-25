@@ -1,9 +1,10 @@
 %accbox {
     @include flexbox(column, nowrap)
-    flex: 1 0 100%;
-    padding-bottom: em(8);
     border-bottom: 1px solid $input-border;
     border-collapse: collapse;
+    flex: 1 0 100%;
+    padding-bottom: em(8);
+
 
     h4 {
         &.title {
@@ -18,27 +19,26 @@
                 }
             }
 
-        & + .row,
-        & + .col,
-        & +  ul {
-            height: 0;
-            transition: height .3s ease-in-out .4s;
-        }
-
-        .is-open {
-            i {
-                &:first-child {
-                    transform: rotate(180deg);
-                }
-            }
-
             & + .row,
             & + .col,
             & +  ul {
-                height: fit-content;
-            }
+                height: 0;
+                transition: height .3s ease-in-out .4s;
         }
 
-    }
+            .is-open {
+                i {
+                    &:first-child {
+                        transform: rotate(180deg);
+                }
+            }
+
+                & + .row,
+                & + .col,
+                & +  ul {
+                    height: fit-content;
+                }
+            }
+        }
     }
 }

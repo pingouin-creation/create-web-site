@@ -1,50 +1,47 @@
 @mixin tooltips($direction: left) {
     @if $direction == 'left' {
 
-   &:hover {
-      width: auto;
-      margin: 0 em(7);
-      background-color: $accent;
-      color: $white;
-      white-space: normal;
-      overflow: auto;
-      padding: em(16);
-      border-radius: em(6);
-      position: absolute;
-      z-index: 999;
-      left: 0;
-      height: auto;
+        &:hover {
+            background-color: $accent;
+            border-radius: em(6);
+            color: $white;
+            height: auto;
+            left: 0;
+            margin: 0 em(7);
+            overflow: auto;
+            padding: em(16);
+            position: absolute;
+            white-space: normal;
+            width: auto;
+            z-index: 999;
 
-
-        &::before {
-          content: '';
-          padding-left: em(0);
-          padding-right: em(0);
-          }
-      }
-
+            &::before {
+                content: '';
+                padding-left: em(0);
+                padding-right: em(0);
+            }
+        }
     } @else {
 
-
         &:hover {
-           width: auto;
-           margin: 0 em(7);
-           background-color: $accent;
-           color: $white;
-           white-space: normal;
-           overflow: auto;
-           padding: em(16);
-           border-radius: em(6);
-           position: absolute;
-           z-index: 999;
-           right: 0;
-           left: auto;
-           height: auto;
+            background-color: $accent;
+            border-radius: em(6);
+            color: $white;
+            height: auto;
+            left: auto;
+            margin: 0 em(7);
+            overflow: auto;
+            padding: em(16);
+            position: absolute;
+            right: 0;
+            white-space: normal;
+            width: auto;
+            z-index: 999;
 
-           &::before {
-               content: '';
-               padding-left: em(0);
-               padding-right: em(0);
+            &::before {
+                content: '';
+                padding-left: em(0);
+                padding-right: em(0);
            }
 
         }

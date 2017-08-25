@@ -9,16 +9,17 @@
     transform: translate(-50%, -200%);
     width: 70%;
 
-.modal {
-    &::before {
-        background-color: $bs12;
-        content: '';
-        display: block;
-        height: 100%;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
+    .modal {
+        &::before {
+            background-color: $bs12;
+            content: '';
+            display: block;
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
     }
 }
 

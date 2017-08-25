@@ -1,36 +1,35 @@
 %btn-filter {
-    display: flex;
     align-self: center;
+    display: flex;
     flex: 0 1 70%;
 
     input {
         &[type='checkbox'] {
             display: none;
 
-        & + label {
-            padding: em(8);
-            display: block;
-            background-color: $white;
-            color: $accent;
-            cursor: pointer;
-            border-radius: em(8);
-            border: 1px solid $accent;
-            text-align: center;
-            transition: color .3s ease-in-out, background-color .3s ease-in-out;
-
-            &:hover {
-                color: $white;
-                background-color: lighten($accent, 20%);
-            }
-
-        }
-
-        &:checked {
             & + label {
-                color: $white;
-                background-color: $accent;
+                background-color: $white;
+                border: 1px solid $accent;
+                border-radius: em(8);
+                color: $accent;
+                cursor: pointer;
+                display: block;
+                padding: em(8);
+                text-align: center;
+                transition: color .3s ease-in-out, background-color .3s ease-in-out;
+
+                &:hover {
+                    background-color: lighten($accent, 20%);
+                    color: $white;
             }
         }
-    }
+
+            &:checked {
+                & + label {
+                    background-color: $accent;
+                    color: $white;
+                }
+            }
+        }
     }
 }

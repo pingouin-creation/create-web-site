@@ -3,18 +3,18 @@
 $em-base: 16px;
 
 @function strip-units($value) {
-  @return ($value / ($value * 0 + 1));
+    @return ($value / ($value * 0 + 1));
 }
 
 
 // pixel to em -> em(16) = 1em = 16px
 @function em($pxval, $base: $em-base) {
 
-  @if not unitless($pxval) {
-    $pxval: strip-units($pxval);
+    @if not unitless($pxval) {
+        $pxval: strip-units($pxval);
   }
-  @if not unitless($base) {
-    $base: strip-units($base);
+    @if not unitless($base) {
+        $base: strip-units($base);
   }
-  @return ($pxval / $base) * 1em;
+    @return ($pxval / $base) * 1em;
 }

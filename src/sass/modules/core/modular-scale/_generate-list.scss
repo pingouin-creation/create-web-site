@@ -1,103 +1,100 @@
 @function ms-reverse-list($list) {
   @if length($list) > 1 {
     @if nth($list, 1) > nth($list, length($list)) {
-      $MS-reversed-list: ();
-      @each $Value in $list {
-        $MS-reversed-list: join($Value, $MS-reversed-list);
+      $ms-reversed-list: ();
+      @each $value in $list {
+        $ms-reversed-list: join($value, $ms-reversed-list);
       }
-      @return $MS-reversed-list;
+      @return $ms-reversed-list;
     }
   }
   @return $list;
 }
 
 
-@function ms-generate-list($Value: 0, $Bases: $ms-base, $Ratios: $ms-ratio) {
+@function ms-generate-list($value: 0, $bases: $ms-base, $ratios: $ms-ratio) {
 
   // Create blank lists
-  $MS-list: ();
-  $MS-base-list: ();
+  $ms-list: ();
+  $ms-base-list: ();
 
   // Loop through each ratio AND each base
   // to generate all possibilities.
-  @each $Ratio in $Ratios {
-    @each $Base in $Bases {
-      
+  @each $ratio in $ratios {
+    @each $base in $bases {
+
       // Set base variables
-      $MS-base-list: ();
-      $Base-counter: 0;
-      
+      $ms-base-list: ();
+      $base-counter: 0;
+
       // Seed list with an initial value
-      $MS-base-list: $Base;
-      
+      $ms-base-list: $base;
+
       // Find values on a positive scale
-      @if $Value >= 0 {
-        
-        // Find lower values on the scale
-        $Base-counter: -1;
-        @while ms-calc($Base-counter, $Base, $Ratio) >= nth($Bases, 1) {
-          $MS-base-list: join($MS-base-list, ms-calc($Base-counter, $Base, $Ratio));
-          $Base-counter: $Base-counter - 1;
-        }
-        
-        // Ensure the list is smallest to largest
-        $MS-base-list: ms-reverse-list($MS-base-list);
+      @if $value >= 0 {
 
-        // Find higher possible values on the scale
-        $Base-counter: 1;
-        @while ms-calc($Base-counter, $Base, $Ratio) <= ms-calc($Value, nth($Bases, 1), $Ratio) {
-          $MS-base-list: join($MS-base-list, ms-calc($Base-counter, $Base, $Ratio));
-          $Base-counter: $Base-counter + 1;
-        }
-      }
-
-      // Find values on a negitive scale
-      @else {
-        
         // Find lower values on the scale
-        $Base-counter: 1;
-        @while ms-calc($Base-counter, $Base, $Ratio) <= nth($Bases, 1) {
-          $MS-base-list: join($MS-base-list, ms-calc($Base-counter, $Base, $Ratio));
-          $Base-counter: $Base-counter + 1;
+        $base-counter: -1;
+        @while ms-calc($base-counter, $base, $ratio) >= nth($bases, 1) {
+          $ms-base-list: join($ms-base-list, ms-calc($base-counter, $base, $ratio));
+          $base-counter: $base-counter - 1;
         }
 
         // Ensure the list is smallest to largest
-        $MS-base-list: ms-reverse-list($MS-base-list);
+        $ms-base-list: ms-reverse-list($ms-base-list);
 
         // Find higher possible values on the scale
-        $Base-counter: -1;
-        @while ms-calc($Base-counter, $Base, $Ratio) >= ms-calc($Value, nth($Bases, 1), $Ratio) {
-          $MS-calc: ms-calc($Base-counter, $Base, $Ratio);
+        $base-counter: 1;
+        @while ms-calc($base-counter, $base, $ratio) <= ms-calc($value, nth($bases, 1), $ratio) {
+          $ms-base-list: join($ms-base-list, ms-calc($base-counter, $base, $ratio));
+          $base-counter: $base-counter + 1;
+        }
+      } @else {
+
+        // Find lower values on the scale
+        $base-counter: 1;
+        @while ms-calc($base-counter, $base, $ratio) <= nth($bases, 1) {
+          $ms-base-list: join($ms-base-list, ms-calc($base-counter, $base, $ratio));
+          $base-counter: $base-counter + 1;
+        }
+
+        // Ensure the list is smallest to largest
+        $ms-base-list: ms-reverse-list($ms-base-list);
+
+        // Find higher possible values on the scale
+        $base-counter: -1;
+        @while ms-calc($base-counter, $base, $ratio) >= ms-calc($value, nth($bases, 1), $ratio) {
+          $ms-calc: ms-calc($base-counter, $base, $ratio);
           // detect if the value excedes the main base value
-          @if $MS-calc < nth($Bases, 1) {
-            $MS-base-list: join($MS-base-list, $MS-calc);
+          @if $ms-calc < nth($bases, 1) {
+            $ms-base-list: join($ms-base-list, $ms-calc);
           }
-          $Base-counter: $Base-counter - 1;
+          $base-counter: $base-counter - 1;
         }
-        
+
         // Trim outlier base.
-        @if length($Bases) > 1 {
-          @for $i from 2 through length($Bases) {
-            @if nth($MS-base-list, 1) > nth($Bases, 1) {
-              $MS-new-list: ();
-              @for $i from 2 through length($MS-base-list) {
-                $MS-new-list: join($MS-new-list, nth($MS-base-list, $i));
+        @if length($bases) > 1 {
+          @for $i from 2 through length($bases) {
+            @if nth($ms-base-list, 1) > nth($bases, 1) {
+              $ms-new-list: ();
+              @for $i from 2 through length($ms-base-list) {
+                $ms-new-list: join($ms-new-list, nth($ms-base-list, $i));
               }
-              $MS-base-list: $MS-new-list;
+              $ms-base-list: $ms-new-list;
             }
           }
         }
       }
-      
+
       // reverse list if its largest to smallest
-      $MS-base-list: ms-reverse-list($MS-base-list);
+      $ms-base-list: ms-reverse-list($ms-base-list);
 
       // Add new possibilities to the master list
-      $MS-list: append($MS-list, $MS-base-list, comma);
+      $ms-list: append($ms-list, $ms-base-list, comma);
 
     }
   }
-  
+
   // After all the possibilities are found, output a master list
-  @return $MS-list;
+  @return $ms-list;
 }

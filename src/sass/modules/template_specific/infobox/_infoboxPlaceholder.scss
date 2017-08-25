@@ -1,42 +1,40 @@
 %infobox {
-    width: 100%;
-    margin: 0 em(20);
-    border: 1px solid $input-border;
     background-color: $progress-shadow;
+    border: 1px solid $input-border;
     min-width: em(320);
+    width: 100%;
 
     .header {
-        width: 100%;
+        background-color: $accent;
+        color: $white;
+        margin-bottom: em(10);
+        overflow: hidden;
         padding: em(9) 0 em(9) em(7);
         position: relative;
-        margin-bottom: em(10);
-        color: $white;
-        background-color: $accent;
         text-transform: uppercase;
-        overflow: hidden;
+        width: 100%;
 
         &::after {
-            width: 0;
-            height: 0;
             border-left: em(10) solid transparent;
             border-right: em(10) solid transparent;
             border-top: em(10) solid $accent;
-            position: absolute;
+            height: 0;
             left: em(8);
+            position: absolute;
             top: em(32);
-
+            width: 0;
         }
 
     }
 
     p {
         color: $textcolor;
-        margin-left: em(8);
         line-height: 1.6;
+        margin-left: em(8);
 
         &.title {
-            text-transform: uppercase;
             font-weight: bold;
+            text-transform: uppercase;
         }
 
         a {
@@ -50,15 +48,11 @@
     }
 
     hr {
-            border-top: 1px solid $input-border;
-            width: 100%;
+        border-top: 1px solid $input-border;
+        width: 100%;
     }
 
     .labeltxt {
         color: $accent;
     }
-
-
-
-
 }

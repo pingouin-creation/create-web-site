@@ -1,59 +1,66 @@
 %progress {
-    -webkit-appearance: none;
     appearance: none;
-    width: 100%;
     height: em(20);
+    width: 100%;
+
 
     &.bg-color-success {
+        //sass-lint:disable no-vendor-prefixes
         &::-webkit-progress-value {
+            //sass-lint:enable no-vendor-prefixes
             background-image:
             linear-gradient(45deg, $light 25%, transparent 25%, transparent 50%, $light 50%, $light 75%, transparent 75%, transparent),
             linear-gradient($light25, $bs25),
             linear-gradient(to right, $progress-base, $success);
+            background-size: 40px 40px, 100% 100%, 100% 100%;
+            border-radius: 2px;
 
-                border-radius: 2px;
-                background-size: 40px 40px, 100% 100%, 100% 100%;
             }
-    }
+        }
 
     &.bg-color-warning {
+        //sass-lint:disable no-vendor-prefixes
         &::-webkit-progress-value {
+            //sass-lint:enable no-vendor-prefixes
             background-image:
             linear-gradient(45deg, $light 25%, transparent 25%, transparent 50%, $light 50%, $light 75%, transparent 75%, transparent),
             linear-gradient($light25, $bs25),
             linear-gradient(to right, $progress-base, $warning);
+            background-size: 40px 40px, 100% 100%, 100% 100%;
+            border-radius: 2px;
 
-                border-radius: 2px;
-                background-size: 40px 40px, 100% 100%, 100% 100%;
             }
-    }
+        }
 
     &.bg-color-alert {
+        //sass-lint:disable no-vendor-prefixes
         &::-webkit-progress-value {
+            //sass-lint:enable no-vendor-prefixes
             background-image:
             linear-gradient(45deg, $light 25%, transparent 25%, transparent 50%, $light 50%, $light 75%, transparent 75%, transparent),
             linear-gradient($light25, $bs25),
             linear-gradient(to right, $progress-base, $alert);
-
-                border-radius: 2px;
-                background-size: 40px 40px, 100% 100%, 100% 100%;
-            }
-    }
-
-  &::-webkit-progress-bar {
-    background-color: lighten($input-border, 15%);
-    border-radius: em(2);
-    box-shadow: 0 em(2) em(5) $progress-shadow inset;
-    }
-
-    &::-webkit-progress-value {
-
-          background-image:
-               linear-gradient(45deg, $light 25%, transparent 25%, transparent 50%, $light 50%, $light 75%, transparent 75%, transparent),
-               linear-gradient($light25, $bs25),
-               linear-gradient(to right, $progress-base, $success);
-
-            border-radius: 2px;
             background-size: 40px 40px, 100% 100%, 100% 100%;
+            border-radius: 2px;
+            }
         }
+
+    //sass-lint:disable no-vendor-prefixes
+    &::-webkit-progress-bar {
+        //sass-lint:enable no-vendor-prefixes
+        background-color: lighten($input-border, 15%);
+        border-radius: em(2);
+        box-shadow: 0 em(2) em(5) $progress-shadow inset;
+    }
+
+    //sass-lint:disable no-vendor-prefixes
+    &::-webkit-progress-value {
+        //sass-lint:enable no-vendor-prefixes
+        background-image:
+        linear-gradient(to top right, $light 25%, transparent 25%, transparent 50%, $light 50%, $light 75%, transparent 75%, transparent),
+        linear-gradient($light25, $bs25),
+        linear-gradient(to right, $progress-base, $success);;;
+        background-size: 40px 40px, 100% 100%, 100% 100%;
+        border-radius: 2px;
+    }
 }

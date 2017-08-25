@@ -11,46 +11,46 @@
 
     }
 
-     > input {
+    > input {
         &[type='checkbox'] {
-        display: none;
+            display: none;
 
-        + label {
-            display: flex;
-            min-width: 0;
-            width: 1em;
-            height: 1em;
-            cursor: pointer;
-            background: $white;
-            border: 1px solid $input-border;
-            border-radius: em(4);
-            padding: 0;
-            transition: background-color .1s ease-in-out;
+            + label {
+                background: $white;
+                border: 1px solid $input-border;
+                border-radius: em(4);
+                cursor: pointer;
+                display: flex;
+                height: 1em;
+                min-width: 0;
+                padding: 0;
+                transition: background-color .1s ease-in-out;
+                width: 1em;
+
+
                 &::before {
+                    color: $white;
                     content: '✓';
                     font-size: 0;
-                    color: $white;
                     margin: 1px auto 0;
-                    transition: all .2s ease-in-out;
+                    transition: font-size .2s ease-in-out;
 
                 }
 
-        }
+            }
 
-        &:checked + label {
-            background-color: $accent;
-            &::before {
-                content: '✓';
-                font-size: ms(0);
+            &:checked + label {
+                background-color: $accent;
+
+                &::before {
+                    content: '✓';
+                    font-size: ms(0);
+                }
+            }
+
+            &:disabled + label {
+                background-color: $disabled;
             }
         }
-
-        &:disabled + label{
-            background-color: $disabled;
-        }
-
-
-        }
-
     }
 }

@@ -1,4 +1,4 @@
-@mixin button($color: $accent, $shape: round){
+@mixin button($color: $accent, $shape: round) {
     margin: 0;
     white-space: 0;
     padding: .5em 1em;
@@ -25,7 +25,7 @@
         background-color: darken($color, 10%);
     }
 
-    &:disabled{
+    &:disabled {
         background-color: $disabled;
     }
 }

@@ -18,8 +18,9 @@ $success,
 //$instagram,
 //$flickr,
 //$dribbble,
-//$foursquare;
+//$foursquare,
 ;
+//sass-lint:disable no-color-keywords
 $color-name:
 white,
 black,
@@ -40,14 +41,14 @@ success,
 //instagram,
 //flickr,
 //dribbble,
-//foursquare;
+//foursquare,
 ;
 
-
 @for $i from 1 through length($color-list) {
-    .textcolor-#{nth($color-name,$i)} {
+    .textcolor-#{nth($color-name, $i)} {
         color: nth($color-list, $i);
     }
+
     .bgcolor-#{nth($color-name, $i)} {
         background-color: nth($color-list, $i);
     }

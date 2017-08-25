@@ -5,16 +5,16 @@
 
 
     &::after {
+        background-color: $accent;
+        color: $white;
         content: '$';
+        display: flex;
+        font-family: sans-serif;
+        height: em(18);
         padding: em(3) .5em;
         position: absolute;
-        font-family: sans-serif;
-        color: $white;
-        background-color: $accent;
-        display: flex;
-        top: em(17);
-        height: em(18);
         right: em(5);
+        top: em(17);
     }
 
     label {
@@ -22,24 +22,25 @@
         padding-top: 0;
     }
 
-     input {
+    input {
         @extend %input;
         height: em(23);
         margin-left: 0;
-        text-align: right;
         margin-right: em(17);
-        width: 100%;
         padding-right: em(30);
+        text-align: right;
+        width: 100%;
 
-            &:focus {
-                @extend %input;
-            }
+        &:focus {
+            @extend %input;
+        }
 
-            &::-webkit-inner-spin-button,
-            ::-webkit-outer-spin-button {
-                appearance: none;
-                margin: 0;
-            }
-
+        //sass-lint:disable no-vendor-prefixes
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            //sass-lint:enable no-vendor-prefixes
+            appearance: none;
+            margin: 0;
         }
     }
+}

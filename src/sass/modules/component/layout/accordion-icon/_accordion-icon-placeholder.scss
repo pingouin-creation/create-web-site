@@ -4,6 +4,7 @@
 
     &> h2 {
         //sass-lint:disable quotes
+        background-color: transparent;
         background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='24' height='32' viewBox='0 0 24 32'><polygon points='0,0 0,32 24,16' style='fill:" + $white + " '></polygon></svg>");
         //sass-lint:enable quotes
         background-origin: content-box;

@@ -3,8 +3,8 @@
     flex-direction: $direction;
     flex-wrap: $wrap;
     @if $direction == 'row' or $direction == 'row-reverse' {
-        justify-content: $alignh;
         align-items: $alignv;
+        justify-content: $alignh;
     } @else {
         align-items: $alignh;
         justify-content: $alignv;

@@ -1,6 +1,6 @@
 @function ms-round-px($result) {
-  @if unit($result) == 'px' {
-    @return round($result);
+    @if unit($result) == 'px' {
+        @return round($result);
   }
-  @return $result;
+    @return $result;
 }

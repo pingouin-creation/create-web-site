@@ -1,5 +1,7 @@
+@import 'breakdown-variable';
+
 @mixin media($breakpoints) {
     @media (min-width: $breakpoints) {
-      @content;
+        @content;
     }
 }

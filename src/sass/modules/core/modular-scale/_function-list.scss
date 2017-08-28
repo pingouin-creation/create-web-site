@@ -2,64 +2,64 @@
 @function ms-list($start: 0, $end: 0, $bases: $ms-base, $ratios: $ms-ratio) {
 
     // Seed results
-  $positive-return: ();
-  $negitive-return: ();
-  $return: ();
+    $positive-return: ();
+    $negitive-return: ();
+    $return: ();
 
-  @if $end >= 0 {
-    // Generate a list of all possible values
-    $positive-return: ms-generate-list($end, $bases, $ratios);
+    @if $end >= 0 {
+        // Generate a list of all possible values
+        $positive-return: ms-generate-list($end, $bases, $ratios);
 
-    // Sort the generated lists
-    $positive-return: ms-sort-list($positive-return);
+        // Sort the generated lists
+        $positive-return: ms-sort-list($positive-return);
 
-    // Trim list
-    $trim-list: ();
-    // If the starting value is a positive number
-    // trim the positive return from that
-    @if $start >= 0 {
-      @for $i from ($start + 1) through $end + 1 {
-        $trim-list: join($trim-list, nth($positive-return, $i));
+        // Trim list
+        $trim-list: ();
+        // If the starting value is a positive number
+        // trim the positive return from that
+        @if $start >= 0 {
+            @for $i from ($start + 1) through $end + 1 {
+                $trim-list: join($trim-list, nth($positive-return, $i));
       }
     } @else {
-      @for $i from 1 through $end + 1 {
-        $trim-list: join($trim-list, nth($positive-return, $i));
-      }
+            @for $i from 1 through $end + 1 {
+                $trim-list: join($trim-list, nth($positive-return, $i));
+            }
     }
-    $positive-return: $trim-list;
+        $positive-return: $trim-list;
 }
 
-// Generate a negitive list
-  @if $start < 0 {
-    // Generate a list of all possible values
-    $negitive-return: ms-generate-list($start, $bases, $ratios);
+    // Generate a negitive list
+    @if $start < 0 {
+        // Generate a list of all possible values
+        $negitive-return: ms-generate-list($start, $bases, $ratios);
 
-    // Sort the generated lists
-    $negitive-return: ms-sort-list($negitive-return);
+        // Sort the generated lists
+        $negitive-return: ms-sort-list($negitive-return);
 
-    // Reverse negitive list results.
-    $ms-new-return: ();
-    @each $i in $negitive-return {
-      $ms-new-return: join($i, $ms-new-return);
+        // Reverse negitive list results.
+        $ms-new-return: ();
+        @each $i in $negitive-return {
+            $ms-new-return: join($i, $ms-new-return);
     }
-    $negitive-return: $ms-new-return;
+        $negitive-return: $ms-new-return;
 
-    // Trim list
-    $trim-list: ();
-    @if $end < 0 {
-      @for $i from abs($end) through (abs($start) + 2) {
-        $trim-list: join(nth($negitive-return, $i), $trim-list);
-      }
+        // Trim list
+        $trim-list: ();
+        @if $end < 0 {
+            @for $i from abs($end) through (abs($start) + 2) {
+                $trim-list: join(nth($negitive-return, $i), $trim-list);
+          }
     } @else {
-      @for $i from 2 through (abs($start) + 1) {
-        $trim-list: join(nth($negitive-return, $i), $trim-list);
+            @for $i from 2 through (abs($start) + 1) {
+                $trim-list: join(nth($negitive-return, $i), $trim-list);
       }
     }
-    $negitive-return: $trim-list;
+        $negitive-return: $trim-list;
   }
 
-  // Join both positive and negitive possibilities.
-  $return: join($negitive-return, $positive-return);
+    // Join both positive and negitive possibilities.
+    $return: join($negitive-return, $positive-return);
 
-  @return $return;
+    @return $return;
 }

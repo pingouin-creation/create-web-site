@@ -1,55 +1,52 @@
 // The main function that brings it all together
 @function ms($value: 0, $bases: $ms-base, $ratios: $ms-ratio) {
 
-  // If no multi-base or multi-ratio stuff is going on
-  // then just retrn the basic calculaiton
-  @if length($bases) == 1 and length($ratios) == 1 {
-    @return ms-round-px(ms-calc($value, $bases, $ratios));
-  }
-
-  // Do calculations directly in Ruby when avalible
-  @if $ms-gem-exists {
-
-    // Remove units from bases
-    $unit: nth($bases, 1) * 0 + 1; // Extracts the unit from the base
-    $unitless-bases: ();
-    @each $base in $bases {
-      $base: $base / $unit;
-      $unitless-bases: join($unitless-bases, $base);
+    // If no multi-base or multi-ratio stuff is going on
+    // then just retrn the basic calculaiton
+    @if length($bases) == 1 and length($ratios) == 1 {
+        @return ms-round-px(ms-calc($value, $bases, $ratios));
     }
 
-    // Calculate natively in Ruby
-    @return ms-round-px(ms-gem-func($value, $unitless-bases, $ratios) * $unit);
+    // Do calculations directly in Ruby when avalible
+    @if $ms-gem-exists {
+
+        // Remove units from bases
+        $unit: nth($bases, 1) * 0 + 1; // Extracts the unit from the base
+        $unitless-bases: ();
+        @each $base in $bases {
+            $base: $base / $unit;
+            $unitless-bases: join($unitless-bases, $base);
+        }
+
+        // Calculate natively in Ruby
+        @return ms-round-px(ms-gem-func($value, $unitless-bases, $ratios) * $unit);
   }
 
-  // Generate a list of all possible values
-  $return: ms-generate-list($value, $bases, $ratios);
+    // Generate a list of all possible values
+    $return: ms-generate-list($value, $bases, $ratios);
 
-  // Sort the generated lists
-  $return: ms-sort-list($return);
+    // Sort the generated lists
+    $return: ms-sort-list($return);
 
-  // Reverse list if its negitive.
-  @if $value < 0 {
-    $ms-new-return: ();
-    @each $i in $return {
-      $ms-new-return: join($i, $ms-new-return);
+    // Reverse list if its negitive.
+    @if $value < 0 {
+        $ms-new-return: ();
+        @each $i in $return {
+            $ms-new-return: join($i, $ms-new-return);
+        }
+        $return: $ms-new-return;
     }
-    $return: $ms-new-return;
-  }
 
-  // Normalize value for counting from 1
-  // Because CSS counts things from 1
-  // So Sass does as well
-  // So I get to write fun stuff like this
-  $value: abs($value) + 1;
 
-  // Find the correct value in the list
-  $return: nth($return, $value);
+    $value: abs($value) + 1;
 
-  @return ms-round-px($return);
+
+    $return: nth($return, $value);
+
+    @return ms-round-px($return);
 }
 
 // Same function, different name, for good measure.
 @function modular-scale($value: 0, $bases: $ms-base, $ratios: $ms-ratio) {
-  @return ms($value, $bases, $ratios);
+    @return ms($value, $bases, $ratios);
 }

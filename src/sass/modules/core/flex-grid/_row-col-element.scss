@@ -6,38 +6,39 @@
 
 .col {
     @include flexbox(column, wrap, flex-start, flex-start);
-    padding: 0 em(4);
     flex: 1 1 100%;
+    padding: 0 em(4);
+
 
     //same as col, delete?
     &.xsmall {
+        @include flexbox(column, wrap, flex-start, flex-start);
         flex: 1 0 0;
         padding: 0 em(4);
-        @include flexbox(column, wrap, flex-start, flex-start);
     }
 
     &.small {
+        @include flexbox(column, wrap, flex-start, flex-start);
         flex: 2 0 0;
         padding: 0 em(4);
-        @include flexbox(column, wrap, flex-start, flex-start);
     }
 
     &.medium {
+        @include flexbox(column, wrap, flex-start, flex-start);
         flex: 3 0 0;
         padding: 0 em(4);
-        @include flexbox(column, wrap, flex-start, flex-start);
     }
 
     &.large {
+        @include flexbox(column, wrap, flex-start, flex-start);
         flex: 4 0 0;
         padding: 0 em(4);
-        @include flexbox(column, wrap, flex-start, flex-start);
     }
 
     &.xlarge {
+        @include flexbox(column, wrap, flex-start, flex-start);
         flex: 5 0 0;
         padding: 0 em(4);
-        @include flexbox(column, wrap, flex-start, flex-start);
     }
 
 

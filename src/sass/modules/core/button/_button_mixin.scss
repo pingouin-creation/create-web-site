@@ -1,20 +1,21 @@
 @mixin button($color: $accent, $shape: round) {
+    background-color: $color;
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    display: block;
+    font-size: ms(0);
+    height: auto;
     margin: 0;
-    white-space: 0;
     padding: .5em 1em;
     text-align: center;
-    display: block;
+    white-space: 0;
     width: fit-content;
-    height: auto;
-    background-color: $color;
-    color: $white;
-    font-size: ms(0);
-    cursor: pointer;
-    border: 0;
+
     @if $shape == 'round' {
-    border-radius: 50em;
-} @else {
-    border-radius: 0;
+        border-radius: 50em;
+    } @else {
+        border-radius: 0;
 }
 
     &:focus {

@@ -392,8 +392,8 @@ textarea {
   -ms-flex-pack: start;
   justify-content: flex-start;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   padding: 0 0.25em; }
   .col.xsmall {
     display: -webkit-box;
@@ -1075,8 +1075,9 @@ input, .col.currency input, .pourcent input, .pourcent input:focus, .col.dropdow
     content: '*';
     display: inline-block;
     font-family: sans-serif;
-    font-size: 0.8em;
+    font-size: 1.25em;
     height: 0.6875em;
+    position: absolute;
     width: 0.625em; }
 
 .input-group-nosubmit {
@@ -1477,11 +1478,15 @@ textarea {
 blockquote {
   border-left: 1px solid #aaaaaa;
   color: #aaaaaa;
+  display: block;
   line-height: 1.6;
   margin: 0 0 1em;
   padding: .5625em 1.25em 0 1.1875em; }
   blockquote cite {
-    color: #aaaaaa; }
+    color: #aaaaaa;
+    display: block;
+    font-size: 0.8em;
+    font-style: italic; }
     blockquote cite::before {
       color: #aaaaaa;
       content: '— ';

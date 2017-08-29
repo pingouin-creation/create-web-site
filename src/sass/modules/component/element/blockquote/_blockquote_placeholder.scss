@@ -1,12 +1,17 @@
 %blockquote {
     border-left: 1px solid lighten($textcolor, 40%);
     color: lighten($textcolor, 40%);
+    display: block;
     line-height: 1.6;
     margin: 0 0 1em;
     padding: .5625em 1.25em 0 1.1875em;
 
+
     cite {
         color: lighten($textcolor, 40%);
+        display: block;
+        font-size: ms(-1);
+        font-style: italic;
 
         &::before {
             color: lighten($textcolor, 40%);

@@ -1,7 +1,13 @@
 .row {
     @include flexbox(row, nowrap, space-between, flex-start);
-    margin-top: em(4);
-    width: 100%;
+    flex: 1 1 100%;
+    margin-top: em(10);
+}
+
+.row-col {
+    @include flexbox(row, wrap, space-between, flex-start);
+    flex: 1 1 100%;
+    padding: 0 em(4);
 }
 
 .col {

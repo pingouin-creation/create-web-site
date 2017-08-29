@@ -2,7 +2,8 @@
     @extend %accordion-icon;
     background-color: $disabled;
 
-    &> h2 {
+
+    & > h2 {
         @extend %titletemplate;
         background-color: $disabled;
         color: $textcolor;

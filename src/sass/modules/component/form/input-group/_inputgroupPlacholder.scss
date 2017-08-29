@@ -1,8 +1,9 @@
 %input-group {
-    align-items: stretch;
+    @include flexbox(row, wrap, flex-start, stretch);
     border: 0;
     display: flex;
     width: 100%;
+
 
 
     & > :first-child {
@@ -14,10 +15,10 @@
 
     }
 
-    label {
-        @extend %label;
+    .shortlabel {
+        @extend %shortlabel;
         background-color: $input-border;
-        font-size: ms(1);
+        font-size: ms(0);
         padding: em(5) .5em;
 
     }
@@ -31,6 +32,10 @@
 
         &[type='submit'] {
             @extend %button-squared;
+            flex: 0 0 auto;
+            font-size: ms(0);
+            padding: 0 .5em;
+
         }
     }
 }

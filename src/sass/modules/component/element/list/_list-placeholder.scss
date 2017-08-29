@@ -55,49 +55,49 @@
 
     .listbody {
         display: block;
-        height: em(29);
-        margin-top: em(26);
+        height: em(33);
         overflow-y: auto;
+        padding-top: em(16);
         width: 100%;
 
         &.line1 {
-            height: em(29);
+            height: em(33);
         }
 
         &.line2 {
-            height: em(60);
+            height: em(64);
         }
 
         &.line3 {
-            height: em(86);
+            height: em(96);
         }
 
         &.line4 {
-            height: em(114);
+            height: em(128);
         }
 
         &.line5 {
-            height: em(142);
+            height: em(160);
         }
 
         &.line6 {
-            height: em(166);
+            height: em(192);
         }
 
         &.line7 {
-            height: em(194);
+            height: em(224);
         }
 
         &.line8 {
-            height: em(222);
+            height: em(256);
         }
 
         &.line9 {
-            height: em(248);
+            height: em(288);
         }
 
         &.line10 {
-            height: em(278);
+            height: em(320);
         }
 
         .row {

@@ -1,33 +1,16 @@
 %currency {
-    @include flexbox(column, nowrap, space-between);
-    box-sizing: border-box;
-    position: relative;
+    @include flexbox(row, wrap, flex-start, stretch);
+    border: 0;
+    display: flex;
+    width: 100%;
 
-
-    &::after {
-        background-color: $accent;
-        color: $white;
-        content: '$';
-        display: flex;
-        font-family: sans-serif;
-        height: em(18);
-        padding: em(3) .5em;
-        position: absolute;
-        right: em(5);
-        top: em(17);
-    }
-
-    label {
-        @extend %label;
-        padding-top: 0;
-    }
 
     input {
         @extend %input;
-        height: em(23);
+        height: em(26);
         margin-left: 0;
-        margin-right: em(17);
-        padding-right: em(30);
+        margin-right: 0;
+        padding-right: em(2);
         text-align: right;
         width: 100%;
 
@@ -42,5 +25,21 @@
             appearance: none;
             margin: 0;
         }
+    }
+
+    &>shortlabel {
+        @extend %shortlabel;
+        background-color: $accent;
+
+        color: $white;
+        display: block;
+        flex: 0 0 em(20);
+        font-family: sans-serif;
+        padding: em(5) 0;
+        text-align: center;
+
+        &::after {
+            content: '$';
+                }
     }
 }

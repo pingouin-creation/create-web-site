@@ -1,13 +1,12 @@
 %radio {
     @include flexbox(row, wrap, flex-start, flex-start);
 
-    label {
+
+    .shortlabel {
+        @extend %shortlabel;
         display: flex;
         padding-left: em(15);
 
-        &:first-of-type {
-            padding-left: 0;
-        }
 
     }
 
@@ -15,7 +14,8 @@
         &[type='radio'] {
             display: none;
 
-            + label {
+            + .shortlabel {
+                @extend %shortlabel;
                 background: $white;
                 border: 1px solid $input-border;
                 border-radius: 50%;
@@ -52,4 +52,6 @@
 
         }
     }
+
+
 }

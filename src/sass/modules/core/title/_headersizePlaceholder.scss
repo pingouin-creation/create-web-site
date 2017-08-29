@@ -34,8 +34,8 @@
 }
 
 %sixthtitle {
-    font-size: ms(0);
+    font-size: ms(-1);
     @include media($tablet-portrait) {
-        font-size: ms(0);
+        font-size: ms(-1);
     }
 }

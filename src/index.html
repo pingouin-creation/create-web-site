@@ -6,29 +6,37 @@
     <meta charset="utf-8">
 </head>
 <body>
+    <h1>All modules</h1>
     <div class="row accordion-icon">
-        <h2>test</h2>
+        <h2>Accordion-icon</h2>
+        <div class="col" style="background-color:purple; height:100px;"></div>
     </div>
     <div class="row">
-        <div class="col">
-            <label>Montant</label>
-            <div class="input-group-noSubmit">
-                <label>USD</label>
+        <div class="col input-group-noSubmit">
+            <label>Input-group-noSubmit</label>
+            <label class="shortlabel">USD</label>
+            <input type="text" placeholder="" />
+        </div>
+        <div class="col input-group">
+            <label>input-group</label>
+                <label class="shortlabel">USD</label>
                 <input type="text" placeholder="" />
-            </div>
+                <input type="submit" value="OK" />
         </div>
     </div>
     <div class="row accordion">
-        <h2>test</h2>
+        <h2>accordion</h2>
     </div>
     <div class="row">
         <div class="col currency">
-            <label>Montant</label>
-            <input type="text" placeholder="" />
+                <label for="currency">Currency</label>
+                <input type="number" id="currecncy" placeholder="" />
+                <shortlabel></shortlabel>
         </div>
         <div class="col pourcent">
-            <label>Pourcentage</label>
-            <input type="text" placeholder="" />
+            <label>Pourcent</label>
+            <input type="number" placeholder="" />
+            <shortlabel></shortlabel>
         </div>
     </div>
     <div class="row">
@@ -39,21 +47,23 @@
     </div>
     <div class="row">
         <div class="col radio">
-            <label>Red</label><input type="radio" name='test' id="test" /><label for='test'></label>
-            <label>Blue</label><input type="radio" name='test' id="test2" /><label for='test2'></label>
+            <label>Radio Button</label>
+            <label class="shortlabel">Red</label><input type="radio" name='test' id="test" /><label class="shortlabel" for='test'></label>
+            <label class="shortlabel">Blue</label><input type="radio" name='test' id="test2" /><label class="shortlabel" for='test2'></label>
         </div>
         <div class="col checkbox">
-            <label>Check</label><input type="checkbox" id="checktest" /><label for='checktest'></label>
+            <label>Check Button</label>
+            <label class="shortlabel">Check</label><input type="checkbox" id="checktest" /><label class="shortlabel" for='checktest'></label>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <p>Progress bar</p>
+            <h6>Progress bar</h6>
             <progress value="65" max="100"></progress>
         </div>
-        <div class="col">
+        <div class="col dropdown">
             <label>Dropdown</label>
-            <select >
+            <select>
                 <option>Option 1</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
@@ -61,11 +71,14 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="row-col">
             <label>Normal textinput</label>
-            <input placeholder="text" />
+            <input type="text" placeholder="text" />
         </div>
-        <textarea class="line3" ></textarea>
+        <div class="row-col">
+            <label>Textarea</label>
+            <textarea class="line3" placeholder"3 lignes" ></textarea>
+        </div>
     </div>
     <div class="row list">
         <div class="head">
@@ -73,7 +86,7 @@
             <div class="col small">Name</div>
             <div class="col xlarge">Description</div>
         </div>
-        <div class="listbody">
+        <div class="listbody line3">
             <a class="row">
                 <div class="col xsmall">1</div>
                 <div class="col small">Client 1</div>

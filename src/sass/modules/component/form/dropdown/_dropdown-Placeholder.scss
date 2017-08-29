@@ -10,5 +10,8 @@
     background-repeat: no-repeat;
     background-size: em(9) em(6);
 
-
   }
+
+%dropdown {
+    @include flexbox(row, wrap);
+}

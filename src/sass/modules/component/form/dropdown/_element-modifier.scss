@@ -1,3 +1,9 @@
-select {
-    @extend %select;
+.col {
+    &.dropdown {
+        @extend %dropdown;
+
+        select {
+            @extend %select;
+        }
+    }
 }

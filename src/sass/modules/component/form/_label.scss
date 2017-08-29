@@ -2,7 +2,7 @@
     align-items: center;
     color: $textcolor;
     display: flex;
-    flex: 0 0 auto;
+    flex: 1 0 100%;
     font-family: sans-serif;
     font-size: ms(-1);
     margin: 0;
@@ -12,4 +12,9 @@
     padding-top: 0;
     text-align: left;
     white-space: nowrap;
+}
+
+%shortlabel {
+    @extend %label;
+    flex: 0 0 auto;
 }

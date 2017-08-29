@@ -1,5 +1,3 @@
-.col {
-    &.pourcent {
-        @extend %pourcent;
-    }
+.pourcent {
+    @extend %pourcent;
 }

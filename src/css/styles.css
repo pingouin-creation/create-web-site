@@ -883,7 +883,7 @@ input, .col.currency input, .pourcent input, .pourcent input:focus, .col.dropdow
     -ms-flex: 0 0 1.25em;
     flex: 0 0 1.25em;
     font-family: sans-serif;
-    padding: 0.3125em 0;
+    padding: 0.5em 0;
     text-align: center; }
     .col.currency > shortlabel::after, .pourcent > shortlabel::after {
       content: '$'; }
@@ -926,7 +926,7 @@ input, .col.currency input, .pourcent input, .pourcent input:focus, .col.dropdow
     -ms-flex: 0 0 1.25em;
     flex: 0 0 1.25em;
     font-family: sans-serif;
-    padding: 0.3125em 0;
+    padding: 0.5em 0;
     text-align: center; }
     .col.currency > shortlabel::after, .pourcent > shortlabel::after {
       content: '$'; }

@@ -1,7 +1,12 @@
 %titletemplate {
     background-color: $disabled;
+    box-sizing: border-box;
     color: $textcolor;
-    height: em(56);
+    font-weight: 300;
+    height: auto;
+    margin: 0;
+    padding: em(5);
+    padding-bottom: em(16);
     text-transform: none;
     width: 100%;
 }

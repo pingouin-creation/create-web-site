@@ -1,25 +1,52 @@
 %modal-container {
-    animation: slide 200ms ease-out forwards;
-    background-color: $white;
-    border-radius: em(5);
-    left: 50%;
-    max-width: em(400);
-    padding: em(20);
+    animation: darken 300ms ease-in-out forwards;
+    background-color:  $bs12;
+    display: none;
+    height: 100vh;
+    left: 0;
+    opacity: 0;
     position: fixed;
-    transform: translate(-50%, -200%);
-    width: 70%;
+    top: 0;
+    width: 100vw;
+
 
     .modal {
+        animation: slide 200ms ease-out forwards;
+        animation-delay: 300ms;
+        background-color: $white;
+        border-radius: em(4);
+        box-shadow: 0 em(4) em(20) $bs22;
+        display: block;
+        height: auto;
+        left: 50%;
+        margin: 0 auto;
+        padding: em(16);
+        position: absolute;
+        top: em(-200);
+        transform: translate(-50%, -50%);
+        width: em(320);
+        z-index: 9999;
+
         &::before {
-            background-color: $bs12;
-            content: '';
-            display: block;
-            height: 100%;
-            left: 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
+            @include flexbox(row, nowrap, center, center);
+            background-color: lighten($accent, 20%);
+            border: 0;
+            border-radius: em(75);
+            box-shadow: 0 0 em(10) $bs25;
+            color: $white;
+            content: '✘';
+            cursor: pointer;
+            padding: em(3) em(5);
+            position: absolute;
+            right: em(-5);
+            top: em(-5);
+            transition: background-color .2s linear;
         }
+
+    }
+
+    &.open {
+        display: block;
     }
 }
 
@@ -30,8 +57,19 @@
     }
 
     100% {
-        top: 20%;
-        transform: translate(-50%, 0%);
+        top: 50%;
+        transform: translate(-50%, -50%);
 
     }
+}
+
+@keyframes darken {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
 }

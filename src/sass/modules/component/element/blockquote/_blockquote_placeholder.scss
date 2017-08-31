@@ -3,8 +3,8 @@
     color: lighten($textcolor, 40%);
     display: block;
     line-height: 1.6;
-    margin: 0 0 1em;
-    padding: .5625em 1.25em 0 1.1875em;
+    margin: 0 em(16);
+    padding: 0 1.35em 0 1.1875em;
 
 
     cite {

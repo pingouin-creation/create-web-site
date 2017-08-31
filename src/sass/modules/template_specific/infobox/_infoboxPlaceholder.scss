@@ -1,28 +1,31 @@
 %infobox {
-    background-color: $progress-shadow;
+    background-color: lighten($progress-shadow, 15%);
     border: 1px solid $input-border;
+    margin: 0 em(10);
     min-width: em(320);
+    padding: 0;
     width: 100%;
 
     .header {
         background-color: $accent;
+        box-sizing: border-box;
         color: $white;
         margin-bottom: em(10);
-        overflow: hidden;
-        padding: em(9) 0 em(9) em(7);
+        padding: em(9) em(5);
         position: relative;
         text-transform: uppercase;
         width: 100%;
 
-        &::after {
+        &::before {
+            border-bottom: 0 solid transparent;
             border-left: em(10) solid transparent;
             border-right: em(10) solid transparent;
             border-top: em(10) solid $accent;
-            height: 0;
+            bottom: em(-8);
+            content: '\A';
             left: em(8);
             position: absolute;
-            top: em(32);
-            width: 0;
+
         }
 
     }

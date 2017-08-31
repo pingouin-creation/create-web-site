@@ -6,6 +6,7 @@
     & > h2 {
         @extend %titletemplate;
         background-color: $disabled;
+        background-image: none;
         color: $textcolor;
         cursor: pointer;
         font-weight: 300;

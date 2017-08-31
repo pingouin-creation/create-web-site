@@ -1,44 +1,42 @@
 %accbox {
-    @include flexbox(column, nowrap)
+    @include flexbox(column, nowrap, flex-start, center)
     border-bottom: 1px solid $input-border;
     border-collapse: collapse;
+    box-sizing: border-box;
     flex: 1 0 100%;
     padding-bottom: em(8);
 
 
-    h4 {
-        &.title {
-            @include flexbox(row, nowrap)
-            font-weight: bolder;
 
-            i {
-                &:first-child {
-                    transform: rotate(0);
-                    transform-origin: center;
-                    transition: transform .3s linear;
+    h4 {
+        @include flexbox(row, nowrap)
+        font-weight: bolder;
+
+        i {
+            &:first-child {
+                transform: rotate(0);
+                transform-origin: center;
+                transition: transform .3s linear;
                 }
             }
-
-            & + .row,
-            & + .col,
-            & +  ul {
-                height: 0;
-                transition: height .3s ease-in-out .4s;
         }
 
-            .is-open {
-                i {
-                    &:first-child {
-                        transform: rotate(180deg);
-                }
-            }
+    .box-content {
+        box-sizing: border-box;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        }
 
-                & + .row,
-                & + .col,
-                & +  ul {
-                    height: fit-content;
-                }
+    &.open {
+        i {
+            &:first-child {
+                transform: rotate(180deg);
             }
+        }
+
+        .box-content {
+            height: auto;
         }
     }
 }

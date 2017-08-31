@@ -47,6 +47,12 @@
         padding: 0 em(4);
     }
 
+    &.full {
+        @include flexbox(column, wrap, flex-start, flex-start);
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
 
     &.left {
         @include flexbox(column, wrap, flex-start, flex-start);

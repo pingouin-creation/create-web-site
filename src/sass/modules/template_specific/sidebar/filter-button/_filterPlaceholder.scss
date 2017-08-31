@@ -1,16 +1,21 @@
 %btn-filter {
     align-self: center;
+    box-sizing: border-box;
     display: flex;
     flex: 0 1 70%;
+    margin-top: em(10);
 
     input {
         &[type='checkbox'] {
+            box-sizing: border-box;
             display: none;
+
 
             & + label {
                 background-color: $white;
                 border: 1px solid $accent;
                 border-radius: em(8);
+                box-sizing: border-box;
                 color: $accent;
                 cursor: pointer;
                 display: block;

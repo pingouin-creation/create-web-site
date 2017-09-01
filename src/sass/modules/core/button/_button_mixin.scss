@@ -28,5 +28,6 @@
 
     &:disabled {
         background-color: $disabled;
+        color: darken($disabled, 15%);
     }
 }

@@ -36,45 +36,33 @@
 
 
     &.xsmall {
-        flex: 0 0 18%;
+        flex: 0 0 20%;
         padding: 0 em(4);
     }
 
     &.small {
-        flex: 0 0 36%;
+        flex: 0 0 40%;
         padding: 0 em(4);
     }
 
     &.medium {
-        flex: 0 0 54%;
+        flex: 0 0 60%;
         padding: 0 em(4);
     }
 
     &.large {
-        flex: 0 0 72%;
+        flex: 0 0 80%;
         padding: 0 em(4);
     }
 
     &.xlarge {
-        flex: 0 0 90%;
+        flex: 1 1 100%;
         padding: 0 em(4);
     }
 
     &.full {
-        flex: 1 1 100%;
+        flex: 1  1 100%;
         padding: 0;
-    }
-
-    &.left {
-        align-self: flex-start;
-    }
-
-    &.right {
-        align-self: flex-end;
-    }
-
-    &.center {
-        align-self: center;
     }
 
     &.wrap {

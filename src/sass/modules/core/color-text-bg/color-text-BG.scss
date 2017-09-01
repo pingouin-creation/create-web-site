@@ -45,11 +45,14 @@ success,
 ;
 
 @for $i from 1 through length($color-list) {
+    //sass-lint:disable no-important
     .textcolor-#{nth($color-name, $i)} {
-        color: nth($color-list, $i);
+        color: nth($color-list, $i) !important;
     }
 
     .bgcolor-#{nth($color-name, $i)} {
-        background-color: nth($color-list, $i);
+        background-color: nth($color-list, $i) !important;
+        //sass-lint:enable no-important
+
     }
 }

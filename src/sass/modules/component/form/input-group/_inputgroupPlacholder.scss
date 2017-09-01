@@ -16,7 +16,7 @@
     }
 
     .shortlabel {
-        @extend %shortlabel;
+        @extend %label;
         background-color: $input-border;
         font-size: ms(0);
         padding: em(5) .5em;

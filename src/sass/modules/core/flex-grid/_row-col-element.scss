@@ -1,68 +1,98 @@
 .row {
-    @include flexbox(row, nowrap, space-between, flex-start);
+    align-items: flex-start;
+    display: flex;
     flex: 1 1 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     margin-top: em(10);
+
+    &.item-left {
+        justify-content: flex-start;
+    }
+
+    &.item-center {
+        justify-content: center;
+    }
+
+    &.item-right {
+        justify-content: flex-end;
+    }
+
+    &.item-split {
+        justify-content: space-between;
+    }
 }
 
-.row-col {
-    @include flexbox(row, wrap, space-between, flex-start);
-    flex: 1 1 100%;
-    padding: 0 em(4);
-}
 
 .col {
-    @include flexbox(column, wrap, flex-start, flex-start);
+    align-items: flex-start;
+    display: flex;
     flex: 1 1 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 0 em(4);
 
 
-    //same as col, delete?
     &.xsmall {
-        @include flexbox(column, wrap, flex-start, flex-start);
-        flex: 1 0 0;
+        flex: 0 0 18%;
         padding: 0 em(4);
     }
 
     &.small {
-        @include flexbox(column, wrap, flex-start, flex-start);
-        flex: 2 0 0;
+        flex: 0 0 36%;
         padding: 0 em(4);
     }
 
     &.medium {
-        @include flexbox(column, wrap, flex-start, flex-start);
-        flex: 3 0 0;
+        flex: 0 0 54%;
         padding: 0 em(4);
     }
 
     &.large {
-        @include flexbox(column, wrap, flex-start, flex-start);
-        flex: 4 0 0;
+        flex: 0 0 72%;
         padding: 0 em(4);
     }
 
     &.xlarge {
-        @include flexbox(column, wrap, flex-start, flex-start);
-        flex: 5 0 0;
+        flex: 0 0 90%;
         padding: 0 em(4);
     }
 
     &.full {
-        @include flexbox(column, wrap, flex-start, flex-start);
         flex: 1 1 100%;
         padding: 0;
     }
 
-
     &.left {
-        @include flexbox(column, wrap, flex-start, flex-start);
+        align-self: flex-start;
     }
 
     &.right {
-        @include flexbox(column, wrap, flex-end, flex-start);
+        align-self: flex-end;
     }
 
     &.center {
-        @include flexbox(column, wrap, center, flex-start);
+        align-self: center;
+    }
+
+    &.wrap {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+
+    }
+
+    &.nowrap {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
     }
 }

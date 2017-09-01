@@ -28,7 +28,7 @@
     }
 
     &>shortlabel {
-        @extend %shortlabel;
+        @extend %label;
         background-color: $accent;
 
         color: $white;

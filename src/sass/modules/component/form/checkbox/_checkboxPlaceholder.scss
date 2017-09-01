@@ -2,7 +2,7 @@
     @include flexbox(row, wrap, flex-start, flex-start);
 
     .shortlabel {
-        @extend %shortlabel;
+        @extend %label;
         display: flex;
         padding-left: em(15);
 
@@ -17,7 +17,8 @@
             display: none;
 
             + label {
-                @extend %shortlabel;
+                @extend %label;
+                align-items: center;
                 background: $white;
                 border: 1px solid $input-border;
                 border-radius: em(4);

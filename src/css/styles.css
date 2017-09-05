@@ -1012,15 +1012,407 @@ progress {
   appearance: none;
   height: 1.25em;
   width: 100%; }
-  progress.bg-color-success::-webkit-progress-value {
+  progress[value='67']::-webkit-progress-value {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
     background-size: 40px 40px, 100% 100%, 100% 100%;
     border-radius: 2px; }
-  progress.bg-color-warning::-webkit-progress-value {
+  progress[value='68']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='69']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='70']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='71']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='72']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='73']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='74']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='75']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='76']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='77']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='78']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='79']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='80']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='81']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='82']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='83']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='84']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='85']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='86']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='87']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='88']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='89']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='90']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='91']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='92']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='93']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='94']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='95']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='96']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='97']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='98']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='99']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='100']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #5cb85c);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='34']::-webkit-progress-value {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
     background-size: 40px 40px, 100% 100%, 100% 100%;
     border-radius: 2px; }
-  progress.bg-color-alert::-webkit-progress-value {
+  progress[value='35']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='36']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='37']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='38']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='39']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='40']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='41']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='42']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='43']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='44']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='45']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='46']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='47']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='48']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='49']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='50']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='51']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='52']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='53']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='54']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='55']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='56']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='57']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='58']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='59']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='60']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='61']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='62']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='63']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='64']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='65']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='66']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f0ad4e);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='0']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='1']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='2']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='3']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='4']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='5']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='6']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='7']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='8']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='9']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='10']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='11']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='12']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='13']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='14']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='15']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='16']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='17']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='18']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='19']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='20']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='21']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='22']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='23']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='24']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='25']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='26']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='27']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='28']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='29']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='30']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='31']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='32']::-webkit-progress-value {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
+    background-size: 40px 40px, 100% 100%, 100% 100%;
+    border-radius: 2px; }
+  progress[value='33']::-webkit-progress-value {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to right, #09c, #f44);
     background-size: 40px 40px, 100% 100%, 100% 100%;
     border-radius: 2px; }

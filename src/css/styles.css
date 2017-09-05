@@ -632,7 +632,7 @@ h6 {
   margin: 0 auto;
   padding-top: 0;
   position: fixed;
-  top: -2.625em;
+  top: -4.375em;
   -webkit-transition: top .2s ease-in-out;
   transition: top .2s ease-in-out;
   width: 100%;

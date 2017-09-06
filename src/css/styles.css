@@ -678,7 +678,7 @@ input, .col.currency input, .pourcent input, .pourcent input:focus, .col.dropdow
     background-color: #e9e9e9;
     color: #1a1a1a; }
 
-label, .col.currency > shortlabel, .pourcent > shortlabel, .radio .shortlabel, .radio > input[type='radio'] + .shortlabel, .checkbox .shortlabel, .checkbox > input[type='checkbox'] + label, .input-group-nosubmit .shortlabel, .input-group .shortlabel {
+label, .col.currency > shortlabel, .pourcent > shortlabel, .radio label, .radio > input[type='radio'] + label, .checkbox label, .checkbox > input[type='checkbox'] + label, .input-group-nosubmit .shortlabel, .input-group .shortlabel {
   color: #444;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,14 +801,14 @@ label, .col.currency > shortlabel, .pourcent > shortlabel, .radio .shortlabel, .
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
-  .radio .shortlabel {
+  .radio label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-left: 0.9375em; }
   .radio > input[type='radio'] {
     display: none; }
-    .radio > input[type='radio'] + .shortlabel {
+    .radio > input[type='radio'] + label {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
@@ -825,7 +825,7 @@ label, .col.currency > shortlabel, .pourcent > shortlabel, .radio .shortlabel, .
       -webkit-transition: background-color .1s ease-in-out;
       transition: background-color .1s ease-in-out;
       width: 1em; }
-      .radio > input[type='radio'] + .shortlabel::before {
+      .radio > input[type='radio'] + label::before {
         color: #fff;
         content: '•';
         font-size: 0;
@@ -856,12 +856,12 @@ label, .col.currency > shortlabel, .pourcent > shortlabel, .radio .shortlabel, .
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
-  .checkbox .shortlabel {
+  .checkbox label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-left: 0.9375em; }
-    .checkbox .shortlabel:first-of-type {
+    .checkbox label:first-of-type {
       padding-left: 0; }
   .checkbox > input[type='checkbox'] {
     display: none; }

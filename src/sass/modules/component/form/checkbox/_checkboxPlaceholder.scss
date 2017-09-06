@@ -1,7 +1,7 @@
 %checkbox {
     @include flexbox(row, wrap, flex-start, flex-start);
 
-    .shortlabel {
+    label {
         @extend %label;
         display: flex;
         padding-left: em(15);

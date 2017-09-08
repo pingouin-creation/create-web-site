@@ -999,11 +999,15 @@ label, .currency label, .pourcent label, .radio label, .radio > input[type='radi
     border-radius: 0; }
   .input-group-nosubmit label {
     background-color: #cccccc;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     font-size: 1em;
+    height: 1.625em;
+    line-height: 1;
     padding: 0.3125em 0.5em; }
   .input-group-nosubmit input {
     border-left: 0;
-    height: auto; }
+    height: 1.625em; }
 
 .input-group {
   display: -webkit-box;
@@ -1030,17 +1034,24 @@ label, .currency label, .pourcent label, .radio label, .radio > input[type='radi
     border-radius: 0; }
   .input-group label {
     background-color: #cccccc;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     font-size: 1em;
+    height: 1.625em;
+    line-height: 1;
     padding: 0.3125em 0.5em; }
   .input-group input {
     border-left: 0;
     border-right: 0;
-    height: auto; }
+    height: 1.625em; }
     .input-group input[type='submit'] {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
       -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
       flex: 0 0 auto;
       font-size: 1em;
+      height: 1.625em;
       padding: 0 .5em; }
 
 progress {

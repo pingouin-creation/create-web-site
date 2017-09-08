@@ -18,8 +18,13 @@
     label {
         @extend %label;
         background-color: $input-border;
+        box-sizing: border-box;
         font-size: ms(0);
+        height: em(26);
+        line-height: 1;
         padding: em(5) .5em;
+
+
 
     }
 
@@ -27,14 +32,17 @@
         @extend %input;
         border-left: 0;
         border-right: 0;
-        height: auto;
+        height: em(26);
 
 
         &[type='submit'] {
             @extend %button-squared;
+            box-sizing: border-box;
             flex: 0 0 auto;
             font-size: ms(0);
+            height: em(26);
             padding: 0 .5em;
+
 
         }
     }

@@ -18,13 +18,17 @@
     label {
         @extend %label;
         background-color: $input-border;
+        box-sizing: border-box;
         font-size: ms(0);
+        height: em(26);
+        line-height: 1;
         padding: em(5) .5em;
+
     }
 
     input {
         @extend %input;
         border-left: 0;
-        height: auto;
+        height: em(26);
     }
 }

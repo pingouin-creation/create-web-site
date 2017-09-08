@@ -15,7 +15,7 @@
 
     }
 
-    .shortlabel {
+    label {
         @extend %label;
         background-color: $input-border;
         font-size: ms(0);

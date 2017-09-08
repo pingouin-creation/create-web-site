@@ -1,5 +1,5 @@
 @mixin button($color: $accent, $shape: round) {
-    background-color: $color;
+    background: linear-gradient(adjust-hue($color, -10deg), $color);
     border: 0;
     color: $white;
     cursor: pointer;
@@ -9,6 +9,7 @@
     margin: 0;
     padding: .5em 1em;
     text-align: center;
+    text-shadow: 0 em(1) em(2) $bs12;
     white-space: 0;
     width: fit-content;
 

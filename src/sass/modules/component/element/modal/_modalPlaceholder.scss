@@ -1,6 +1,6 @@
 %modal-container {
     animation: darken 300ms ease-in-out forwards;
-    background-color:  $bs12;
+    background-color:  $bs22;
     display: none;
     height: 100vh;
     left: 0;
@@ -8,39 +8,67 @@
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 9998;
 
 
     .modal {
         animation: slide 200ms ease-out forwards;
         animation-delay: 300ms;
-        background-color: $white;
+        background-color: darken($white, 5%);
         border-radius: em(4);
         box-shadow: 0 em(4) em(20) $bs22;
         display: block;
         height: auto;
         left: 50%;
         margin: 0 auto;
-        padding: em(16);
+        padding-bottom: em(16);
         position: absolute;
         top: em(-200);
         transform: translate(-50%, -50%);
         width: em(320);
         z-index: 9999;
+        @include media($tablet-portrait) {
+            width: em(600);
+        }
 
         &::before {
-            @include flexbox(row, nowrap, center, center);
-            background-color: lighten($accent, 20%);
-            border: 0;
-            border-radius: em(75);
-            box-shadow: 0 0 em(10) $bs25;
-            color: $white;
-            content: '✘';
-            cursor: pointer;
-            padding: em(3) em(5);
+            background: linear-gradient(to right, adjust-hue($accent, -15deg), $accent);
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: em(4);
+            border-top-right-radius: em(4);
+            content: ' ';
+            height: em(8);
+            left: 0;
             position: absolute;
-            right: em(-5);
-            top: em(-5);
-            transition: background-color .2s linear;
+            top: 0;
+            width: 100%;
+
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            background-color: $white;
+            border-top-left-radius: em(4);
+            border-top-right-radius: em(4);
+            box-sizing: border-box;
+            color: $textcolor;
+            display: inline-block;
+            font-size: ms(1);
+            font-weight: lighter;
+            margin-bottom: em(16);
+            padding: em(16) em(5);
+            width: 100%;
+
+
+        }
+
+        p {
+            padding: em(5);
         }
 
     }

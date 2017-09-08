@@ -2,7 +2,7 @@
     @extend %currency;
 
 
-    &>shortlabel {
+    &>label {
         &::after {
             content: '%';
         }

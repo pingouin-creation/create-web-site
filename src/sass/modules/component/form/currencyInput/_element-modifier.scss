@@ -1,5 +1,3 @@
-.col {
-    &.currency {
-        @extend %currency;
-    }
+.currency {
+    @extend %currency;
 }

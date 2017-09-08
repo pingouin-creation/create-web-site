@@ -1,0 +1,17 @@
+.modal {
+    &::after {
+        @include flexbox(row, nowrap, center, center);
+        background-color: lighten($accent, 20%);
+        border: 0;
+        border-radius: em(75);
+        box-shadow: 0 0 em(10) $bs25;
+        color: $white;
+        content: '✘';
+        cursor: pointer;
+        padding: em(3) em(5);
+        position: absolute;
+        right: em(-5);
+        top: em(-5);
+        transition: background-color .2s linear;
+    }
+}

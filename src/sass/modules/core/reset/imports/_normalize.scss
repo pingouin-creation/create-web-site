@@ -12,6 +12,8 @@ html {
     -webkit-text-size-adjust: 100%;
     //sass-lint:enable no-vendor-prefixes
     font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
 
     @if ($with-flavor) {
         //sass-lint:disable no-vendor-prefixes

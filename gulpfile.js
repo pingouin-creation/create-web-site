@@ -68,6 +68,7 @@ return gulp
             browsers: ['ie >= 11', 'last 2 versions', 'last 2 versions'],
             cascade: false
         }))
+        .pipe($.csso())
 		.pipe(gulp.dest('./src/css/'))
         .pipe(browsersync.reload({stream:true}));
 

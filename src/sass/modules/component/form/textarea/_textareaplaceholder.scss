@@ -30,43 +30,7 @@
         color: lighten($black, 10%);
     }
 
-    &.line1 {
-        height: em(21);
-    }
-
-    &.line2 {
-        height: em(39);
-    }
-
-    &.line3 {
-        height: em(57);
-    }
-
-    &.line4 {
-        height: em(76);
-    }
-
-    &.line5 {
-        height: em(94);
-    }
-
-    &.line6 {
-        height: em(113);
-    }
-
-    &.line7 {
-        height: em(131);
-    }
-
-    &.line8 {
-        height: em(148);
-    }
-
-    &.line9 {
-        height: em(166);
-    }
-
-    &.line10 {
-        height: em(185);
-    }
+    //sass-lint:disable mixins-before-declarations
+    @include lineheight($linetextarea, $txtlinelen);
+    //sass-lint:enable mixins-before-declarations
 }

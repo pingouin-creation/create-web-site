@@ -24,25 +24,9 @@
             text-align: left;
             text-shadow: 0 em(1) em(1) $bs22;
 
-            &.xsmall {
-                flex: 1 0 0;
-            }
-
-            &.small {
-                flex: 2 0 0;
-            }
-
-            &.medium {
-                flex: 3 0 0;
-            }
-
-            &.large {
-                flex: 4 0 0;
-            }
-
-            &.xlarge {
-                flex: 5 0 0;
-            }
+            //sass-lint:disable mixins-before-declarations
+            @include setflex($sizearray, $lensize);
+            //sass-lint:enable mixins-before-declarations
 
             &:first-child {
                 margin-left: em(10);
@@ -61,45 +45,9 @@
         padding-top: em(16);
         width: 100%;
 
-        &.line1 {
-            height: em(33);
-        }
-
-        &.line2 {
-            height: em(64);
-        }
-
-        &.line3 {
-            height: em(96);
-        }
-
-        &.line4 {
-            height: em(128);
-        }
-
-        &.line5 {
-            height: em(160);
-        }
-
-        &.line6 {
-            height: em(192);
-        }
-
-        &.line7 {
-            height: em(224);
-        }
-
-        &.line8 {
-            height: em(256);
-        }
-
-        &.line9 {
-            height: em(288);
-        }
-
-        &.line10 {
-            height: em(320);
-        }
+        //sass-lint:disable mixins-before-declarations
+        @include lineheight($linearray, $lenline);
+        //sass-lint:enable mixins-before-declarations
 
         .row {
             @include flexbox;
@@ -120,25 +68,9 @@
             > .col {
                 @extend %item;
 
-                &.xsmall {
-                    flex: 1 0 0;
-                }
-
-                &.small {
-                    flex: 2 0 0;
-                }
-
-                &.medium {
-                    flex: 3 0 0;
-                }
-
-                &.large {
-                    flex: 4 0 0;
-                }
-
-                &.xlarge {
-                    flex: 5 0 0;
-                }
+                //sass-lint:disable mixins-before-declarations
+                @include setflex($sizearray, $lensize);
+                //sass-lint:enable mixins-before-declarations
 
                 &.left {
                     justify-content: flex-start;

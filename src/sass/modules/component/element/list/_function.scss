@@ -1,0 +1,15 @@
+@mixin setflex($array, $size) {
+    @for $i from 1 through $size {
+        &.#{nth($array, $i)} {
+            flex: $i 0 0;
+         }
+    }
+}
+
+@mixin lineheight($array, $size) {
+    @for $i from 1 through $size {
+        &.line#{$i} {
+            height: #{nth($array, $i)};
+         }
+    }
+}

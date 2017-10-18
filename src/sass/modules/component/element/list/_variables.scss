@@ -1,0 +1,7 @@
+// xsmall to xlarge
+
+$sizearray: xsmall, small, medium, large, xlarge;
+$lensize: length($sizearray);
+
+$linearray: em(33), em(64), em(96), em(128), em(160), em(192), em(224), em(256), em(288), em(320);
+$lenline: length($linearray);

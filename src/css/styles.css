@@ -687,6 +687,12 @@ input, .currency input, .pourcent input, .col.dropdown select, .input-group-nosu
     font-size: 1em;
     font-style: italic;
     font-weight: lighter; }
+  input::-ms-input-placeholder, .currency input::-ms-input-placeholder, .pourcent input::-ms-input-placeholder, .col.dropdown select::-ms-input-placeholder, .input-group-nosubmit input::-ms-input-placeholder, .input-group input::-ms-input-placeholder {
+    color: #5e5e5e;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: lighter; }
   input::placeholder, .currency input::placeholder, .pourcent input::placeholder, .col.dropdown select::placeholder, .input-group-nosubmit input::placeholder, .input-group input::placeholder {
     color: #5e5e5e;
     font-family: sans-serif;
@@ -1512,6 +1518,9 @@ textarea {
     font-family: sans-serif;
     font-style: italic; }
   textarea:-ms-input-placeholder {
+    font-family: sans-serif;
+    font-style: italic; }
+  textarea::-ms-input-placeholder {
     font-family: sans-serif;
     font-style: italic; }
   textarea::placeholder {

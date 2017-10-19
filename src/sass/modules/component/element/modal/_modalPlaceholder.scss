@@ -27,7 +27,7 @@
         transform: translate(-50%, -50%);
         width: em(320);
         z-index: 9999;
-        @include media($tablet-portrait) {
+        @include media(tablet-portrait) {
             width: em(600);
         }
 

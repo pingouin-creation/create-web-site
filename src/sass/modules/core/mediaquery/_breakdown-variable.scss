@@ -1,6 +1,8 @@
-$iphone-land: 640px;
-$tablet-portrait: 768px;
-$tablet-land: 1024px;
-$desktop: $tablet-land;
-$desktopnotouch: 1025px;
-$desktop-ultimate: 1920px;
+$breakpoints: (
+    'iphone-land': '640px',
+    'tablet-portrait': '768px',
+    'tablet-land': '1024px',
+    'desktop': '1024px',
+    'desktopnotouch': '1025px',
+    'desktop-ultimate': '1920px'
+);

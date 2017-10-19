@@ -1,7 +1,9 @@
 @import 'breakdown-variable';
 
-@mixin media($breakpoints) {
-    @media (min-width: $breakpoints) {
-        @content;
+@mixin media($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+        }
     }
 }

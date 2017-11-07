@@ -11,7 +11,7 @@ Use these files when you want to create a web site. At the end you get all necce
 Gulp does a lot of tasks by default:
     1. It compiles scss files to css
     2. It compiles pug files to html
-    3. It checks errors and formatting
+    3. It performs a lint on pug, js and scss files
     4. It creates 1x, 2x and 3x images.
     5. It compresses svg
     6. It compresses images

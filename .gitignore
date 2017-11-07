@@ -57,3 +57,4 @@ bower_components
 
 ### Git ###
 *.orig
+/.vs/slnx.sqlite-journal
